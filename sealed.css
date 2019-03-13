@@ -1,0 +1,437 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+    background: #d9dfe4 url(https://deckbox.org/images/background-light.png);
+	overflow-y: scroll;
+}
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+    border-left: 1px solid #f0e9eb;
+    border-right: 1px solid #f0e9eb;
+    border-bottom: 1px solid #f0e9eb;
+    -moz-box-shadow: #bbb 0 2px 5px;
+    -webkit-box-shadow: #bbb 0 2px 5px;
+    box-shadow: #bbb 0 2px 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fff;
+}
+
+
+
+#header {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 140%;
+    border-bottom: 1px solid #bbb;
+    -moz-box-shadow: #bbb 0 2px 5px;
+    -webkit-box-shadow: #bbb 0 2px 5px;
+    box-shadow: #bbb 0 2px 5px;
+}
+#nav {
+    padding: 0 15px;
+    color: #fff;
+    background-color: #3B5998;
+}
+#nav ul {
+    list-style-type: none;
+    padding-right: 15px;
+}
+.clear {
+    clear: both;
+    line-height: 0;
+    height: 0;
+}
+#nav li.main.left {
+    float: left;
+}
+#nav li.main {
+    float: right;
+    padding: 8px 0;
+}
+.left {
+    float: left;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#nav li.main a {
+    padding: 4px 10px;
+    white-space: nowrap;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    outline: 0;
+}
+#nav a:visited, #nav a:link {
+    color: #fff;
+    text-decoration: none;
+}
+#nav a:hover {
+    text-decoration: underline;
+}
+#nav li img, #nav li span {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.icon_16x2 {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+img {
+    border: 0;
+    margin: 0;
+}
+
+
+
+.page_header {
+    margin: 10px 0;
+    padding-bottom: 12px;
+    background: transparent url(https://deckbox.org/images/dots.gif) repeat-x scroll center bottom;
+}
+.page_title {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 140%;
+    padding: 9px 5px 0;
+    display: block;
+    height: 25px;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+.indented_content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+    color: #484848;
+    font-size: 13px;
+    line-height: 140%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.s_pictures_simple {
+    background-position: 0 -1809px;
+}
+.s_cart {
+    background-position: 0 -1556px;
+}
+.s_info {
+    background-position: 0 -611px;
+}
+.sprite {
+    background-image: url(https://deckbox.org/assets/icons/icons_sprite-008ce9c33576f86a06054c1e7ba27eb5.png);
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -2px;
+    border: 0;
+}
+.info:before {
+    content: "";
+    background-image: url(https://deckbox.org/assets/icons/icons_sprite-008ce9c33576f86a06054c1e7ba27eb5.png);
+    background-position: 0 -611px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: -24px;
+    position: absolute;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    margin: 2em auto;
+}
+table td, table th {
+    padding: 0.5em;
+}
+table td {
+	font-size: 0.8em;
+    text-align: left;
+    border: 1px solid grey;
+    background-color: #eee;
+}
+table th {
+    background-color: #3B5998;
+    color: white;
+}
+table tr.space {
+    height: 1.5em;
+}
+
+
+
+.page {
+	padding: 0.5em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+section {
+	display: block;
+	width: 100%;
+}
+.level1 {
+	margin: 1rem 0;
+	background-color: #ddf;
+	box-shadow: #000 2px 2px 4px;
+}
+.level2 {
+	margin: 1rem 0.5rem;
+	background-color: #bbd;
+	background-color: #eef;
+	box-shadow: #000 2px 2px 4px;
+}
+.group h2, .group h3, .group h4, .group a {
+	position: relative;
+	padding: 0.35rem;
+   -webkit-touch-callout: none; /* iOS Safari */
+     -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+         -ms-user-select: none; /* Internet Explorer/Edge */
+	         user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+.group h2 {
+	text-align: center;
+	background-image: linear-gradient(to bottom, #fff, #ddf);
+}
+.group h3 {
+	background-image: linear-gradient(to bottom, #ddf, #bbd);
+	background-image: linear-gradient(to bottom, #ddf, #eef);
+}
+.group h4 {
+	border: solid #aaa;
+	border-width: 1px 0 0;
+	font-variant: small-caps;
+	font-weight: normal;
+}
+.group a, .group .ready {
+	cursor: pointer;
+}
+.group .ready:before {
+	content: ">";
+	position: absolute;
+	right: 0.5rem;
+	color: #448;
+	transform: rotate(90deg);
+	transition: transform 0.3s;
+}
+.group .ready.closed:before {
+	transform: none;
+}
+.group .discontinued:after {
+	content: " (discontinued)";
+	color: red;
+	font-style: italic;
+	font-size: 0.9rem;
+}
+.group .small {
+	display: block;
+	padding-bottom: 0.5rem;
+	font-size: 0.7rem;
+	text-align: center;
+}
+.group .includes {
+	font-style: italic;
+	font-size: 0.8em;
+	padding: 1em 2em;
+}
+.group .includes:before {
+	content: "Each CSV includes: ";
+	font-weight: bold;
+}
+.group .warning {
+	color: #c00 !important;
+}
+.group .category {
+	font-weight: bold;
+	margin-top: 1.5rem;
+}
+.group .list {
+	padding: 0;
+	padding-bottom: 0.5rem;
+	height: auto;
+	overflow: hidden;
+	transition: height 0.2s ease-in-out;
+}
+.group .list.hide {
+	padding-bottom: 0;
+}
+
+
+.group ul {
+	list-style: none;
+}
+.group li {
+	margin: 0 0.5rem;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.group li .set {
+	width: 3rem;
+	font-size: 0.9rem;
+	padding-left: 0.5rem;
+}
+.group li .note {
+	flex: 0 0 100%;
+	display: block;
+	padding: 0.35rem;
+	font-size: 0.7em;
+	font-style: italic;
+}
+
+
+.group li a {
+	width: 1%;
+	flex-grow: 1;
+	background-color: rgba(255,255,255,0.5);
+	outline: 1px solid blue;
+	color: black;
+	text-decoration: none;
+	padding: 0.35rem;
+	margin: 0.5rem 0.2rem 0rem;
+	transition: background-color 0.1s, color 0.1s;
+}
+.group li.flex a {
+	width: auto;
+	flex-grow: 0;
+}
+.group li a:hover {
+	background-color: rgba(0,0,200,0.2);
+}
+.group li a:focus {
+	background-color: rgba(0,0,200,0.7);
+	color: white;
+}
+.group li a.unverified {
+	background-color: rgba(255,200,200,0.3);
+	color: darkred;
+	outline-color: red;
+}
+.group li a.unverified:hover {
+	background-color: rgba(200,0,0,0.3);
+}
+.group li a.unverified:focus {
+	background-color: rgba(150,0,0,0.7);
+	color: white;
+}
+.group li a.normal {
+	width: auto;
+	flex-grow: 0;
+	background-color: transparent;
+	outline: none;
+	color: blue;
+	text-decoration: underline;
+	text-align: right;
+	font-size: 0.7em;
+}
+.group li a.missing {
+	cursor: default;
+	background-color: rgba(255,255,255,0.3);
+	background-color: lightgray;
+	color: grey;
+	outline: 0px;
+}
+.group li a.empty {
+	outline: 0;
+	background-color: transparent;
+	cursor: default;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 350px) {
+	#hide3 {
+		display: none;
+	}
+}
+@media only screen and (max-width: 450px) {
+	#hide2 {
+		display: none;
+	}
+}
+@media only screen and (max-width: 610px) {
+	#hide1 {
+		display: none;
+	}
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+	section {
+		width: 48%;
+	}
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 991px) {
+	.page {
+		width: 960px;
+		margin: 0 auto;
+	}
+	section {
+		width: 30%;
+	}
+}
+
+
+#menu {
+	margin: 3em auto;
+	width: 15em;
+}
+#menu h2 {
+	margin: 2rem;
+}
+#menu ul {
+	list-style: none;
+	margin-left: 2rem;
+}
+#top {
+	opacity: 0;
+	position: fixed;
+	bottom: 0.25em;
+	right: 0.25em;
+	z-index: 99;
+	border: 2px solid black;
+	outline: none;
+	background-color: #aaa;
+	color: black;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	width: 1em;
+	height: 1em;
+	padding-top: 0.3em;
+	border-radius: 0.5em;
+	font-size: 4em;
+	transition: opacity 0.2s, color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+#top.show {
+	opacity: 0.3;
+}
+#top:hover {
+	background-color: black;
+	color: #aaa;
+	border-color: #aaa;
+}
