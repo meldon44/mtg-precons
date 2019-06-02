@@ -145,6 +145,23 @@ img {
     margin-top: -2px;
     border: 0;
 }
+.sprite_off {
+    opacity: 0.35;
+    filter: "alpha(opacity=35)";
+}
+.flag {
+    width: 16px;
+    height: 11px;
+    margin-right: 5px;
+    background: url(https://deckbox.org/assets/icons/flags_sprite-ba37a9334f81d2730101d419a001c9a9.png) no-repeat;
+    vertical-align: middle;
+}
+.flag.flag-us {
+    background-position: -64px -154px;
+}
+.s_star2 {
+    background-position: 0 -1361px;
+}
 .info:before {
     content: "";
     background-image: url(https://deckbox.org/assets/icons/icons_sprite-008ce9c33576f86a06054c1e7ba27eb5.png);
@@ -175,7 +192,13 @@ table th {
     background-color: #3B5998;
     color: white;
 }
-table tr.space {
+table tr:first-child th {
+    background-color: white;
+    color: black;
+}
+tbody::after {
+    content: "";
+    display: block;
     height: 1.5em;
 }
 
@@ -230,7 +253,7 @@ section {
 .group a, .group .ready {
     cursor: pointer;
 }
-.group .ready:before {
+.group .ready::before {
     content: ">";
     position: absolute;
     right: 0.5rem;
@@ -238,10 +261,21 @@ section {
     transform: rotate(90deg);
     transition: transform 0.3s;
 }
-.group .ready.closed:before {
+.group .ready.closed::before {
     transform: none;
 }
-.group .discontinued:after {
+.group .count::after {
+    content: attr(data-count);
+    font-size: 0.7em;
+    position: relative;
+    top: -0.1em;
+    font-weight: normal;
+    color: grey;
+}
+.group .discontinued::after {
+    position: relative;
+    font-size: 0.7em !important;
+    top: -0.1em;
     content: " (discontinued)";
     color: red;
     font-style: italic;
@@ -258,7 +292,7 @@ section {
     font-size: 0.8em;
     padding: 1em 2em;
 }
-.group .includes:before {
+.group .includes::before {
     content: "Each CSV includes: ";
     font-weight: bold;
 }
@@ -363,6 +397,10 @@ section {
     background-color: transparent;
     cursor: default;
 }
+.group .disabled {
+    color: grey;
+    cursor: default !important;
+}
 
 
 /* Mobile Styles */
@@ -424,6 +462,7 @@ section {
     outline: none;
     background-color: #aaa;
     color: black;
+    text-decoration: none;
     cursor: pointer;
     display: flex;
     align-items: center;
