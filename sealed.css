@@ -155,9 +155,13 @@ img {
     margin-right: 5px;
     background: url(https://deckbox.org/assets/icons/flags_sprite-ba37a9334f81d2730101d419a001c9a9.png) no-repeat;
     vertical-align: middle;
+    box-shadow: 0 0 1px;
 }
 .flag.flag-us {
     background-position: -64px -154px;
+}
+.flag.flag-jp {
+    background-position: -240px -66px;
 }
 .s_star2 {
     background-position: 0 -1361px;
