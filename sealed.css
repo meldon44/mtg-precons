@@ -179,6 +179,38 @@ img {
 
 
 
+#page_info_wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#page_info {
+    flex: 1 0 0;
+    min-width: 200px;
+    margin-right: 2rem;
+}
+#kofi {
+    box-shadow: 1px 3px 5px 1px;
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+    padding: 1rem;
+    transform: rotate(2deg);
+    border: 1px solid #22aaa1;
+    border-radius: 25px;
+    text-align: center;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#kofi > span {
+    margin-bottom: 2rem; font-size: 1.5rem;
+}
+
+
+
 table {
     border-collapse: collapse;
     margin: 2em auto;
