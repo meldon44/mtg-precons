@@ -139,7 +139,7 @@ img {
     background-position: 0 -611px;
 }
 .sprite {
-    background-image: url(https://deckbox.org/assets/icons/icons_sprite-008ce9c33576f86a06054c1e7ba27eb5.png);
+    background-image: url(https://deckbox.org/assets/icons/icons_sprite-728047db0283a2e04d3b4f7ebef83520.png);
     vertical-align: middle;
     margin-right: 5px;
     margin-top: -2px;
@@ -168,13 +168,13 @@ img {
 }
 .info:before {
     content: "";
-    background-image: url(https://deckbox.org/assets/icons/icons_sprite-008ce9c33576f86a06054c1e7ba27eb5.png);
+    background-image: url(https://deckbox.org/assets/icons/icons_sprite-728047db0283a2e04d3b4f7ebef83520.png);
     background-position: 0 -611px;
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-left: -24px;
     position: absolute;
+    left: 0;
 }
 
 
@@ -183,6 +183,7 @@ img {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    position: relative;
 }
 #page_info {
     flex: 1 0 0;
