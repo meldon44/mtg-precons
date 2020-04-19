@@ -71,7 +71,9 @@
         </div>
         <div id="kofi">
             <span>Appreciate this resource?</span>
-            <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee! :)', '#22aaa1', 'K3K01KOUF');kofiwidget2.draw();setTimeout(function(){document.getElementsByClassName('kofi-button')[0].href='https://bit.ly/myKofi';},1000);</script> 
+            <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+            <script type='text/javascript'>kofiwidget2.init('Buy me a coffee! :)', '#22aaa1', 'K3K01KOUF');kofiwidget2.draw();</script> 
+            <script>document.getElementsByClassName('kofi-button')[0].href='https://bit.ly/myKofi';</script>
         </div>
     </div>
 
@@ -3341,7 +3343,6 @@
                     expandSection( list );
                 }
             };
-        console.log(el.innerText);
             list.style.height = '0px';
             toggleClass( list, 'hide' );
             toggleClass( el, 'closed' );
