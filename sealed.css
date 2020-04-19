@@ -206,7 +206,9 @@ img {
     align-items: center;
 }
 #kofi > span {
-    margin-bottom: 2rem; font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
 }
 
 
