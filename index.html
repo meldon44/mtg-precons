@@ -5,63 +5,47 @@
     <meta name='viewport'
           content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>MTG Preconstructed Products</title>
-    <link rel='stylesheet' href='sealed.css?t=1'/>
+    <link rel='stylesheet' href='sealed v2.css'/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
-    <div id="header">
-        <div id="nav">
-            <ul class="main_dropdown">
-                <li class="main left">
-                    <a href="https://deckbox.org/">
-                        <img src="https://deckbox.org/images/icons/32x32/logo-light.png" class="icon_16x2 ">
-                        Home
-                    </a>
-                </li>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://deckbox.org/">
+                    <img src="https://deckbox.org/images/icons/32x32/logo-light.png" class="icon_16x2 ">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="https://deckbox.org/forum/viewtopic.php?id=28865">
+                    Forum
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-                <li class="main" id="hide1">
-                    <a href="https://deckbox.org/shopping_assistant">
-                        <img src="https://deckbox.org/images/icon_spacer.gif" class="sprite s_cart ">
-                        Shopping Assistant
-                    </a>
-                </li>
-                <li class="main" id="hide2">
-                    <a href="https://deckbox.org/premium">
-                        <img src="https://deckbox.org/images/icons/32x32/ok.png" class="icon_16x2 "> 
-                        Premium
-                    </a>
-                </li>
-                <li class="main"><a href="https://deckbox.org/help/start">Help</a></li>
-                <li class="main"><a href="https://deckbox.org/forum">Forum</a></li>
-                <li class="main" id="hide3"><a href="https://deckbox.org/communities">Communities</a></li>
+<main>
 
-            </ul>
-            <div class="clear">&nbsp;</div>
-        </div>
-    </div>
-
-
-
-    <div class="page_header">
-        <div class="page_title">
-            <img src="https://deckbox.org/images/icon_spacer.gif" class="sprite s_pictures_simple ">
-            Magic the Gathering Preconstructed Products
-        </div>
-    </div>
-
-
+    <h1>MTG Preconstructed Products</h1>
 
     <div id="page_info_wrap" class="indented_content info">
         <div id="page_info">
-            Download CSV files for preconstructed decks from the lists below, then go to <strong>Inventory &gt; Add Cards &gt; From a CSV File</strong> and import the deck.<br /><br />
+            <blockquote class='note' style='color: #aaa; margin-bottom: 1rem;'>This page is a resource resulting from this <a style='color: #aaa;' href='https://deckbox.org/forum/viewtopic.php?id=28865'>Deckbox forum post</a>.</blockquote>
 
-            Please note what cards each CSV contains prior to importing, in case you would like to edit the CSV first (e.g. split up a Duel Deck with a friend, add tokens to a Commander deck, remove the basic lands, etc.).<br /><br /><br />
-            <strong>CSV Defaults:</strong><br />
+            <p>Download CSV files for preconstructed decks from the lists below, then go to <strong>Inventory&nbsp;&gt; Add&nbsp;Cards&nbsp;&gt; From&nbsp;a&nbsp;CSV&nbsp;File</strong> and import the deck.</p>
+
+            <p>Please note what cards each CSV contains prior to importing, in case you would like to edit the CSV first (e.g. split up a Duel Deck with a friend, add tokens to a Commander deck, remove the basic lands, etc.).</p>
+
+            <strong class='heading'>CSV Defaults:</strong>
             <img src="https://deckbox.org/images/icon_spacer.gif" class="sprite s_star2 sprite_off" /> (no condition)<br />
-            <img src="https://deckbox.org/images/icon_spacer_16_11.png" class="flag flag-us" /> (English)<br /><br /><br />
+            <img src="https://deckbox.org/images/icon_spacer_16_11.png" class="flag flag-us" /> (English)
 
-            <strong>Key:</strong>
-            <div class="group">
+            <strong class='heading'>Key:</strong>
+            <div class="list">
                 <ul style="width: 200px">
                     <li><a>100% accurate CSV</a></li>
                     <li><a class="unverified">Unverified CSV</a> <span class="note" style="line-height: 1.4">This usually just means the basic lands may not be split correctly between the different artworks</span></li>
@@ -73,11 +57,9 @@
             <span>Appreciate this resource?</span>
             <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
             <script type='text/javascript'>kofiwidget2.init('Buy me a coffee! :)', '#22aaa1', 'K3K01KOUF');kofiwidget2.draw();</script> 
-            <script>document.getElementsByClassName('kofi-button')[0].href='https://bit.ly/myKofi';</script>
+            <script>$( '.kofi-button' ).attr( 'href', 'https://bit.ly/myKofi' );</script>
         </div>
     </div>
-
-
 
     <div id="menu">
         <h2>Jump to...</h2>
@@ -110,6 +92,7 @@
             </li>
             <li><a href="#other">Other Precons</a>
                 <ul>
+                    <li><a href="#unsanctioned">Unsanctioned</a></li>
                     <li><a href="#brawl">Brawl Decks</a></li>
                     <li><a href="#guild">Guild Kits</a></li>
                     <li><a href="#night">Game Night</a></li>
@@ -123,1382 +106,1400 @@
 
 
 
-    <div class='page' id='page'><section id="col1">
+    <div class='columns' id='precon_lists'>
 
-        <div class='group level1' id='beginner'>
-            <h2>Beginner Products</h2>
-            <div class="list">
-                <div class="group level2" id='planeswalker'>
-                    <h3><span class='count' data-count=' (36)'>Planeswalker Decks</span></h3>
-                    <ul class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-Planeswalker'>download all</a>
-                        </span>
+        <div class='column' id='col_1'>
 
-                        <li class="category">Theros Beyond Death</li>
-                        <li><a href='https://bit.ly/MTG-THB-Elspeth'>Elspeth, Undaunted Hero</a></li>
-                        <li><a href='https://bit.ly/MTG-THB-Ashiok'>Ashiok, Sculptor of Fears</a></li>
+            <div class='list_wrap list_group' id='beginner'>
 
-                        <li class="category">Throne of Eldraine</li>
-                        <li><a href='https://bit.ly/MTG-ELD-Oko'>Oko, the Trickster</a></li>
-                        <li><a href='https://bit.ly/MTG-ELD-Rowan'>Rowan, Fearless Sparkmage</a></li>
+                <h2>Beginner Products</h2>
+                <div class="list">
 
-                        <li class="category">Core Set 2020</li>
-                        <li><a href='https://bit.ly/MTG-M20-Ajani'>Ajani, Inspiring Leader</a></li>
-                        <li><a href='https://bit.ly/MTG-M20-Yanling'>Mu Yanling, Celestial Wind</a></li>
-                        <li><a href='https://bit.ly/MTG-M20-Sorin'>Sorin, Vampire Lord</a></li>
-                        <li><a href='https://bit.ly/MTG-M20-Chandra'>Chandra, Flame's Fury</a></li>
-                        <li><a href='https://bit.ly/MTG-M20-Vivien'>Vivien, Nature's Avenger</a></li>
+                    <div class='list_wrap' id='planeswalker'>
 
-                        <li class="category">War of the Spark</li>
-                        <li><a href='https://bit.ly/MTG-WAR-Gideon'>Gideon, the Oathsworn</a></li>
-                        <li><a href='https://bit.ly/MTG-WAR-Jace'>Jace, Arcane Strategist</a></li>
+                        <h3 data-count='36'>Planeswalker Decks</h3>
+                        <ul class="list">
 
-                        <li class="category">Ravnica Allegiance</li>
-                        <li><a href='https://bit.ly/MTG-RNA-Dovin'>Dovin, Architect of Law</a></li>
-                        <li><a href='https://bit.ly/MTG-RNA-Domri'>Domri, City Smasher</a></li>
+                            <h4 class="category">Theros Beyond Death</h4>
+                            <li><a href='https://bit.ly/MTG-THB-Elspeth'>Elspeth, Undaunted Hero</a></li>
+                            <li><a href='https://bit.ly/MTG-THB-Ashiok'>Ashiok, Sculptor of Fears</a></li>
 
-                        <li class="category">Guilds of Ravnica</li>
-                        <li><a href='https://bit.ly/MTG-GRN-Ral'>Ral, Caller of Storms</a></li>
-                        <li><a href='https://bit.ly/MTG-GRN-Vraska'>Vraska, Regal Gorgon</a></li>
+                            <h4 class="category">Throne of Eldraine</h4>
+                            <li><a href='https://bit.ly/MTG-ELD-Oko'>Oko, the Trickster</a></li>
+                            <li><a href='https://bit.ly/MTG-ELD-Rowan'>Rowan, Fearless Sparkmage</a></li>
 
-                        <li class="category">Core Set 2019</li>
-                        <li><a href='https://bit.ly/MTG-M19-Ajani'>Ajani, Wise Counselor</a></li>
-                        <li><a href='https://bit.ly/MTG-M19-Tezzeret'>Tezzeret, Cruel Machinist</a></li>
-                        <li><a href='https://bit.ly/MTG-M19-Liliana'>Liliana, the Necromancer</a></li>
-                        <li><a href='https://bit.ly/MTG-M19-Sarkhan'>Sarkhan, Dragonsoul</a></li>
-                        <li><a href='https://bit.ly/MTG-M19-Vivien'>Vivien of the Arkbow</a></li>
+                            <h4 class="category">Core Set 2020</h4>
+                            <li><a href='https://bit.ly/MTG-M20-Ajani'>Ajani, Inspiring Leader</a></li>
+                            <li><a href='https://bit.ly/MTG-M20-Yanling'>Mu Yanling, Celestial Wind</a></li>
+                            <li><a href='https://bit.ly/MTG-M20-Sorin'>Sorin, Vampire Lord</a></li>
+                            <li><a href='https://bit.ly/MTG-M20-Chandra'>Chandra, Flame's Fury</a></li>
+                            <li><a href='https://bit.ly/MTG-M20-Vivien'>Vivien, Nature's Avenger</a></li>
 
-                        <li class="category">Global Series</li>
-                        <li><a href='https://bit.ly/MTG-Global-Jiang-Yanggu'>Jiang Yanggu</a></li>
-                        <li><a href='https://bit.ly/MTG-Global-Mu-Yanling'>Mu Yanling</a></li>
+                            <h4 class="category">War of the Spark</h4>
+                            <li><a href='https://bit.ly/MTG-WAR-Gideon'>Gideon, the Oathsworn</a></li>
+                            <li><a href='https://bit.ly/MTG-WAR-Jace'>Jace, Arcane Strategist</a></li>
 
-                        <li class="category">Dominaria</li>
-                        <li><a href='https://bit.ly/MTG-DOM-Teferi'>Teferi, Timebender</a></li>
-                        <li><a href='https://bit.ly/MTG-DOM-Chandra'>Chandra, Bold Pyromancer</a></li>
+                            <h4 class="category">Ravnica Allegiance</h4>
+                            <li><a href='https://bit.ly/MTG-RNA-Dovin'>Dovin, Architect of Law</a></li>
+                            <li><a href='https://bit.ly/MTG-RNA-Domri'>Domri, City Smasher</a></li>
 
-                        <li class="category">Rivals of Ixalan</li>
-                        <li><a href='https://bit.ly/MTG-RIX-Vraska'>Vraska, Scheming Gorgon</a></li>
-                        <li><a href='https://bit.ly/MTG-RIX-Angrath'>Angrath, Minotaur Pirate</a></li>
+                            <h4 class="category">Guilds of Ravnica</h4>
+                            <li><a href='https://bit.ly/MTG-GRN-Ral'>Ral, Caller of Storms</a></li>
+                            <li><a href='https://bit.ly/MTG-GRN-Vraska'>Vraska, Regal Gorgon</a></li>
 
-                        <li class="category">Ixalan</li>
-                        <li><a href='https://bit.ly/MTG-XLN-Jace'>Jace, Ingenious Mind-Mage</a></li>
-                        <li><a href='https://bit.ly/MTG-XLN-Huatli'>Huatli, Dinosaur Knight</a></li>
+                            <h4 class="category">Core Set 2019</h4>
+                            <li><a href='https://bit.ly/MTG-M19-Ajani'>Ajani, Wise Counselor</a></li>
+                            <li><a href='https://bit.ly/MTG-M19-Tezzeret'>Tezzeret, Cruel Machinist</a></li>
+                            <li><a href='https://bit.ly/MTG-M19-Liliana'>Liliana, the Necromancer</a></li>
+                            <li><a href='https://bit.ly/MTG-M19-Sarkhan'>Sarkhan, Dragonsoul</a></li>
+                            <li><a href='https://bit.ly/MTG-M19-Vivien'>Vivien of the Arkbow</a></li>
 
-                        <li class="category">Hour of Devastation</li>
-                        <li><a href='https://bit.ly/MTG-HOU-Nissa'>Nissa, Genesis Mage</a></li>
-                        <li><a href='https://bit.ly/MTG-HOU-Nicol-Bolas'>Nicol Bolas, the Deceiver</a></li>
+                            <h4 class="category">Global Series</h4>
+                            <li><a href='https://bit.ly/MTG-Global-Jiang-Yanggu'>Jiang Yanggu</a></li>
+                            <li><a href='https://bit.ly/MTG-Global-Mu-Yanling'>Mu Yanling</a></li>
 
-                        <li class="category">Amonkhet</li>
-                        <li><a href='https://bit.ly/MTG-AKH-Gideon'>Gideon, Martial Paragon</a></li>
-                        <li><a href='https://bit.ly/MTG-AKH-Liliana'>Liliana, Death Wielder</a></li>
+                            <h4 class="category">Dominaria</h4>
+                            <li><a href='https://bit.ly/MTG-DOM-Teferi'>Teferi, Timebender</a></li>
+                            <li><a href='https://bit.ly/MTG-DOM-Chandra'>Chandra, Bold Pyromancer</a></li>
 
-                        <li class="category">Aether Revolt</li>
-                        <li><a href='https://bit.ly/MTG-AER-Ajani'>Ajani, Valiant Protector</a></li>
-                        <li><a href='https://bit.ly/MTG-AER-Tezzeret'>Tezzeret, Master of Metal</a></li>
+                            <h4 class="category">Rivals of Ixalan</h4>
+                            <li><a href='https://bit.ly/MTG-RIX-Vraska'>Vraska, Scheming Gorgon</a></li>
+                            <li><a href='https://bit.ly/MTG-RIX-Angrath'>Angrath, Minotaur Pirate</a></li>
 
-                        <li class="category">Kaladesh</li>
-                        <li><a href='https://bit.ly/MTG-KLD-Chandra'>Chandra, Pyrogenius</a></li>
-                        <li><a href='https://bit.ly/MTG-KLD-Nissa'>Nissa, Nature's Artisan</a></li>
-                    </ul>
-                </div>
-                <div class="group level2" id='intro'>
-                    <h3 class="discontinued"><span class='count' data-count=' (24)'>Intro Packs</span></h3>
-                    <div class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-Intro'>download all</a>
-                        </span>
-                        <div class="group">
-                            <h4 class="disabled">Shadows Over Innistrad Block</h4>
-                            <ul class="list">
-                                <li class="category">Shadows Over Innistrad</li>
-                                <li><a class="missing">Ghostly Tide</a></li>
-                                <li><a class="missing">Unearthed Secrets</a></li>
-                                <li><a class="missing">Vampiric Thirst</a></li>
-                                <li><a class="missing">Angelic Fury</a></li>
-                                <li><a class="missing">Horrific Visions</a></li>
+                            <h4 class="category">Ixalan</h4>
+                            <li><a href='https://bit.ly/MTG-XLN-Jace'>Jace, Ingenious Mind-Mage</a></li>
+                            <li><a href='https://bit.ly/MTG-XLN-Huatli'>Huatli, Dinosaur Knight</a></li>
 
-                                <li class="category">Eldritch Moon</li>
-                                <li><a class="missing">Unlikely Alliances</a></li>
-                                <li><a class="missing">Dangerous Knowledge</a></li>
-                                <li><a class="missing">Shallow Graves</a></li>
-                                <li><a class="missing">Untamed Wild</a></li>
-                                <li><a class="missing">Weapons and Wards</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Battle for Zendikar Block</h4>
-                            <ul class="list">
-                                <li class="category">Battle for Zendikar</li>
-                                <li><a class="missing">Rallying Cry</a></li>
-                                <li><a class="missing">Swarming Instinct</a></li>
-                                <li><a class="missing">Call of Blood</a></li>
-                                <li><a class="missing">Eldrazi Assault</a></li>
-                                <li><a class="missing">Zendikar's Rage</a></li>
+                            <h4 class="category">Hour of Devastation</h4>
+                            <li><a href='https://bit.ly/MTG-HOU-Nissa'>Nissa, Genesis Mage</a></li>
+                            <li><a href='https://bit.ly/MTG-HOU-Nicol-Bolas'>Nicol Bolas, the Deceiver</a></li>
 
-                                <li class="category">Oath of the Gatewatch</li>
-                                <li><a class="missing">Desperate Stand</a></li>
-                                <li><a class="missing">Twisted Reality</a></li>
-                                <li><a class="missing">Vicious Cycle</a></li>
-                                <li><a class="missing">Surge of Resistance</a></li>
-                                <li><a class="missing">Concerted Effort</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4>Tarkir Block</h4>
-                            <ul class="list">
-                                <li class="category">Khans of Tarkir</li>
-                                <li><a href='https://bit.ly/MTG-KTK-Abzan-Siege'>Abzan Siege</a></li>
-                                <li><a class="missing">Jeskai Monks</a></li>
-                                <li><a class="missing">Sultai Schemers</a></li>
-                                <li><a class="missing">Mardu Raiders</a></li>
-                                <li><a class="missing">Temur Avalanche</a></li>
+                            <h4 class="category">Amonkhet</h4>
+                            <li><a href='https://bit.ly/MTG-AKH-Gideon'>Gideon, Martial Paragon</a></li>
+                            <li><a href='https://bit.ly/MTG-AKH-Liliana'>Liliana, Death Wielder</a></li>
 
-                                <li class="category">Fate Reforged</li>
-                                <li><a class="missing">Unflinching Assault</a></li>
-                                <li><a class="missing">Cunning Plan</a></li>
-                                <li><a class="missing">Grave Advantage</a></li>
-                                <li><a class="missing">Stampeding Hordes</a></li>
-                                <li><a class="missing">Surprise Attack</a></li>
+                            <h4 class="category">Aether Revolt</h4>
+                            <li><a href='https://bit.ly/MTG-AER-Ajani'>Ajani, Valiant Protector</a></li>
+                            <li><a href='https://bit.ly/MTG-AER-Tezzeret'>Tezzeret, Master of Metal</a></li>
 
-                                <li class="category">Dragons of Tarkir</li>
-                                <li><a class="missing">Massed Ranks</a></li>
-                                <li><a class="missing">Enlightened Mastery</a></li>
-                                <li><a class="missing">Cruel Plots</a></li>
-                                <li><a class="missing">Relentless Rush</a></li>
-                                <li><a class="missing">Furious Forces</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Theros Block</h4>
-                            <ul class="list">
-                                <li class="category">Theros</li>
-                                <li><a class="missing">Favors from Nyx</a></li>
-                                <li><a class="missing">Manipulative Monstrosities</a></li>
-                                <li><a class="missing">Devotion to Darkness</a></li>
-                                <li><a class="missing">Blazing Beasts of Myth</a></li>
-                                <li><a class="missing">Anthousa's Army</a></li>
+                            <h4 class="category">Kaladesh</h4>
+                            <li><a href='https://bit.ly/MTG-KLD-Chandra'>Chandra, Pyrogenius</a></li>
+                            <li><a href='https://bit.ly/MTG-KLD-Nissa'>Nissa, Nature's Artisan</a></li>
 
-                                <li class="category">Born of the Gods</li>
-                                <li><a class="missing">Gifts of the Gods</a></li>
-                                <li><a class="missing">Inspiration-Struck</a></li>
-                                <li><a class="missing">Death's Beginning</a></li>
-                                <li><a class="missing">Forged in Battle</a></li>
-                                <li><a class="missing">Insatiable Hunger</a></li>
+                        </ul> <!-- Planeswalker Decks -->
 
-                                <li class="category">Journey into Nyx</li>
-                                <li><a class="missing">Mortals of Myth</a></li>
-                                <li><a class="missing">Fates Foreseen</a></li>
-                                <li><a class="missing">Pantheon's Power</a></li>
-                                <li><a class="missing">Voracious Rage</a></li>
-                                <li><a class="missing">The Wilds and the Deep</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4>Return to Ravnica Block</h4>
-                            <ul class="list">
-                                <li class="category">Return to Ravnica</li>
-                                <li><a href='https://bit.ly/MTG-RTR-Azorius-Advance'>Azorius Advance</a></li>
-                                <li><a href='https://bit.ly/MTG-RTR-Izzet-Ingenuity'>Izzet Ingenuity</a></li>
-                                <li><a href='https://bit.ly/MTG-RTR-Rakdos-Raid' class='unverified'>Rakdos Raid</a></li>
-                                <li><a href='https://bit.ly/MTG-RTR-Golgari-Growth'>Golgari Growth</a></li>
-                                <li><a href='https://bit.ly/MTG-RTR-Selesnya-Surge'>Selesnya Surge</a></li>
+                    </div> <!-- Planeswalker Deck wrap -->
 
-                                <li class="category">Gatecrash</li>
-                                <li><a href='https://bit.ly/MTG-GTC-Orzhov-Oppression'>Orzhov Oppression</a></li>
-                                <li><a href='https://bit.ly/MTG-GTC-Dimir-Dementia'>Dimir Dementia</a></li>
-                                <li><a href='https://bit.ly/MTG-GTC-Gruul-Goliaths'>Gruul Goliaths</a></li>
-                                <li><a href='https://bit.ly/MTG-GTC-Boros-Battalion'>Boros Battalion</a></li>
-                                <li><a href='https://bit.ly/MTG-GTC-Simic-Synthesis'>Simic Synthesis</a></li>
+                    <div class='list_wrap' id='intro'>
 
-                                <li class="category">Dragon's Maze</li>
-                                <li><a href='https://bit.ly/MTG-DGM-Azorius-Authority'>Azorius Authority</a></li>
-                                <li><a href='https://bit.ly/MTG-DGM-Orzhov-Power'>Orzhov Power</a></li>
-                                <li><a href='https://bit.ly/MTG-DGM-Rakdos-Revelry'>Rakdos Revelry</a></li>
-                                <li><a href='https://bit.ly/MTG-DGM-Gruul-Siege'>Gruul Siege</a></li>
-                                <li><a href='https://bit.ly/MTG-DGM-Simic-Domination'>Simic Domination</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4>Innistrad Block</h4>
-                            <ul class="list">
-                                <li class="category">Innistrad</li>
-                                <li><a class="missing">Spectral Legions</a></li>
-                                <li><a class="missing">Eldritch Onslaught</a></li>
-                                <li><a class="missing">Deathly Dominion</a></li>
-                                <li><a class="missing">Carnival of Blood</a></li>
-                                <li><a class="missing">Repel the Dark</a></li>
+                        <h3 class='discontinued' data-count='24'>Intro Packs</h3>
+                        <div class="list">
 
-                                <li class="category">Dark Ascension</li>
-                                <li><a class="missing">Swift Justice</a></li>
-                                <li><a class="missing">Relentless Dead</a></li>
-                                <li><a href='https://bit.ly/MTG-DKA-Monstrous-Surprise'>Monstrous Surprise</a></li>
-                                <li><a href='https://bit.ly/MTG-DKA-Grave-Power'>Grave Power</a></li>
-                                <li><a class="missing">Dark Sacrifice</a></li>
+                                <h4 class="disabled">Shadows Over Innistrad Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Shadows Over Innistrad</h5>
+                                    <li><a class="missing">Ghostly Tide</a></li>
+                                    <li><a class="missing">Unearthed Secrets</a></li>
+                                    <li><a class="missing">Vampiric Thirst</a></li>
+                                    <li><a class="missing">Angelic Fury</a></li>
+                                    <li><a class="missing">Horrific Visions</a></li>
 
-                                <li class="category">Avacyn Restored</li>
-                                <li><a class="missing">Angelic Might</a></li>
-                                <li><a href='https://bit.ly/MTG-AVR-Solitary-Fiends'>Solitary Fiends</a></li>
-                                <li><a class="missing">Slaughterhouse</a></li>
-                                <li><a class="missing">Fiery Dawn</a></li>
-                                <li><a href='https://bit.ly/MTG-AVR-Bound-by-Strength'>Bound by Strength</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Scars Block</h4>
-                            <ul class="list">
-                                <li class="category">Scars of Mirrodin</li>
-                                <li><a class="missing">Myr of Mirrodin</a></li>
-                                <li><a class="missing">Metalcraft</a></li>
-                                <li><a class="missing">Deadspread</a></li>
-                                <li><a class="missing">Relic Breaker</a></li>
-                                <li><a class="missing">Phyrexian Poison</a></li>
+                                    <h5 class="category">Eldritch Moon</h5>
+                                    <li><a class="missing">Unlikely Alliances</a></li>
+                                    <li><a class="missing">Dangerous Knowledge</a></li>
+                                    <li><a class="missing">Shallow Graves</a></li>
+                                    <li><a class="missing">Untamed Wild</a></li>
+                                    <li><a class="missing">Weapons and Wards</a></li>
+                                </ul>
 
-                                <li class="category">Mirrodin Besieged</li>
-                                <li><a class="missing">Path of Blight</a></li>
-                                <li><a class="missing">Doom Inevitable</a></li>
-                                <li><a class="missing">Mirromancy</a></li>
-                                <li><a class="missing">Battle Cries</a></li>
+                                <h4 class="disabled">Battle for Zendikar Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Battle for Zendikar</h5>
+                                    <li><a class="missing">Rallying Cry</a></li>
+                                    <li><a class="missing">Swarming Instinct</a></li>
+                                    <li><a class="missing">Call of Blood</a></li>
+                                    <li><a class="missing">Eldrazi Assault</a></li>
+                                    <li><a class="missing">Zendikar's Rage</a></li>
 
-                                <li class="category">New Phyrexia</li>
-                                <li><a class="missing">Artful Destruction</a></li>
-                                <li><a class="missing">Devouring Skies</a></li>
-                                <li><a class="missing">Feast of Flesh</a></li>
-                                <li><a class="missing">Life for Death</a></li>
-                                <li><a class="missing">Ravaging Swarm</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Zendikar Block</h4>
-                            <ul class="list">
-                                <li class="category">Zendikar</li>
-                                <li><a class="missing">Kor Armory</a></li>
-                                <li><a class="missing">Rise of the Vampires</a></li>
-                                <li><a class="missing">Unstable Terrain</a></li>
-                                <li><a class="missing">Pumped Up</a></li>
-                                <li><a class="missing">The Adventurers</a></li>
+                                    <h5 class="category">Oath of the Gatewatch</h5>
+                                    <li><a class="missing">Desperate Stand</a></li>
+                                    <li><a class="missing">Twisted Reality</a></li>
+                                    <li><a class="missing">Vicious Cycle</a></li>
+                                    <li><a class="missing">Surge of Resistance</a></li>
+                                    <li><a class="missing">Concerted Effort</a></li>
+                                </ul>
 
-                                <li class="category">Worldwake</li>
-                                <li><a class="missing">Brute Force</a></li>
-                                <li><a class="missing">Fangs of the Bloodchief</a></li>
-                                <li><a class="missing">Mysterious Realms</a></li>
-                                <li><a class="missing">Rapid Fire</a></li>
-                                <li><a class="missing">Flyover</a></li>
+                                <h4>Tarkir Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Khans of Tarkir</h5>
+                                    <li><a href='https://bit.ly/MTG-KTK-Abzan-Siege'>Abzan Siege</a></li>
+                                    <li><a class="missing">Jeskai Monks</a></li>
+                                    <li><a class="missing">Sultai Schemers</a></li>
+                                    <li><a class="missing">Mardu Raiders</a></li>
+                                    <li><a class="missing">Temur Avalanche</a></li>
 
-                                <li class="category">Rise of the Eldrazi</li>
-                                <li><a class="missing">Levelers' Glory</a></li>
-                                <li><a class="missing">Levelers' Scorn</a></li>
-                                <li><a class="missing">Invading Spawn</a></li>
-                                <li><a class="missing">Eldrazi Arisen</a></li>
-                                <li><a class="missing">Totem Power</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Alara Block</h4>
-                            <ul class="list">
-                                <li class="category">Shards of Alara</li>
-                                <li><a class="missing">Bant Exalted</a></li>
-                                <li><a class="missing">Esper Artifice</a></li>
-                                <li><a class="missing">Grixis Undead</a></li>
-                                <li><a class="missing">Primordial Jund</a></li>
-                                <li><a class="missing">Naya Behemoths</a></li>
+                                    <h5 class="category">Fate Reforged</h5>
+                                    <li><a class="missing">Unflinching Assault</a></li>
+                                    <li><a class="missing">Cunning Plan</a></li>
+                                    <li><a class="missing">Grave Advantage</a></li>
+                                    <li><a class="missing">Stampeding Hordes</a></li>
+                                    <li><a class="missing">Surprise Attack</a></li>
 
-                                <li class="category">Conflux</li>
-                                <li><a class="missing">Bant on the March</a></li>
-                                <li><a class="missing">Esper Air Assault</a></li>
-                                <li><a class="missing">Grixis Shambling Army</a></li>
-                                <li><a class="missing">Jund Appetite for War</a></li>
-                                <li><a class="missing">Naya Domain</a></li>
+                                    <h5 class="category">Dragons of Tarkir</h5>
+                                    <li><a class="missing">Massed Ranks</a></li>
+                                    <li><a class="missing">Enlightened Mastery</a></li>
+                                    <li><a class="missing">Cruel Plots</a></li>
+                                    <li><a class="missing">Relentless Rush</a></li>
+                                    <li><a class="missing">Furious Forces</a></li>
+                                </ul>
 
-                                <li class="category">Alara Reborn</li>
-                                <li><a class="missing">Legion Aloft</a></li>
-                                <li><a class="missing">Unnatural Schemes</a></li>
-                                <li><a class="missing">Dead Ahead</a></li>
-                                <li><a class="missing">Rumbler</a></li>
-                                <li><a class="missing">Eternal Siege</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4>Core Sets</h4>
-                            <ul class="list">
-                                <li class="category">Magic Origins</li>
-                                <li><a class="missing">Brave the Battle</a></li>
-                                <li><a class="missing">Take to the Sky</a></li>
-                                <li><a class="missing">Demonic Deals</a></li>
-                                <li><a class="missing">Assemble Victory</a></li>
-                                <li><a class="missing">Hunting Pack</a></li>
+                                <h4 class="disabled">Theros Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Theros</h5>
+                                    <li><a class="missing">Favors from Nyx</a></li>
+                                    <li><a class="missing">Manipulative Monstrosities</a></li>
+                                    <li><a class="missing">Devotion to Darkness</a></li>
+                                    <li><a class="missing">Blazing Beasts of Myth</a></li>
+                                    <li><a class="missing">Anthousa's Army</a></li>
 
-                                <li class="category">Magic 2015</li>
-                                <li><a class="missing">Price of Glory</a></li>
-                                <li><a class="missing">Hit the Ground Running</a></li>
-                                <li><a class="missing">Infernal Intervention</a></li>
-                                <li><a class="missing">Flames of the Dragon</a></li>
-                                <li><a class="missing">Will of the Masses</a></li>
+                                    <h5 class="category">Born of the Gods</h5>
+                                    <li><a class="missing">Gifts of the Gods</a></li>
+                                    <li><a class="missing">Inspiration-Struck</a></li>
+                                    <li><a class="missing">Death's Beginning</a></li>
+                                    <li><a class="missing">Forged in Battle</a></li>
+                                    <li><a class="missing">Insatiable Hunger</a></li>
 
-                                <li class="category">Magic 2014</li>
-                                <li><a class="missing">Lightforce</a></li>
-                                <li><a class="missing">Psychic Labyrinth</a></li>
-                                <li><a class="missing">Death Reaper</a></li>
-                                <li><a class="missing">Fire Surge</a></li>
-                                <li><a class="missing">Bestial Strength</a></li>
+                                    <h5 class="category">Journey into Nyx</h5>
+                                    <li><a class="missing">Mortals of Myth</a></li>
+                                    <li><a class="missing">Fates Foreseen</a></li>
+                                    <li><a class="missing">Pantheon's Power</a></li>
+                                    <li><a class="missing">Voracious Rage</a></li>
+                                    <li><a class="missing">The Wilds and the Deep</a></li>
+                                </ul>
 
-                                <li class="category">Magic 2013</li>
-                                <li><a href='https://bit.ly/MTG-M13-Path-to-Victory'>Path to Victory</a></li>
-                                <li><a class="missing">Depths of Power</a></li>
-                                <li><a href='https://bit.ly/MTG-M13-Sole-Domination'>Sole Domination</a></li>
-                                <li><a class="missing">Mob Rule</a></li>
-                                <li><a class="missing">Wild Rush</a></li>
+                                <h4>Return to Ravnica Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Return to Ravnica</h5>
+                                    <li><a href='https://bit.ly/MTG-RTR-Azorius-Advance'>Azorius Advance</a></li>
+                                    <li><a href='https://bit.ly/MTG-RTR-Izzet-Ingenuity'>Izzet Ingenuity</a></li>
+                                    <li><a href='https://bit.ly/MTG-RTR-Rakdos-Raid' class='unverified'>Rakdos Raid</a></li>
+                                    <li><a href='https://bit.ly/MTG-RTR-Golgari-Growth'>Golgari Growth</a></li>
+                                    <li><a href='https://bit.ly/MTG-RTR-Selesnya-Surge'>Selesnya Surge</a></li>
 
-                                <li class="category">Magic 2012</li>
-                                <li><a class="missing">Sacred Assault</a></li>
-                                <li><a href='https://bit.ly/MTG-M12-Mystical-Might'>Mystical Might</a></li>
-                                <li><a class="missing">Grab for Power</a></li>
-                                <li><a href='https://bit.ly/MTG-M12-Blood-and-Fire'>Blood &amp; Fire</a></li>
-                                <li><a class="missing">Entangling Webs</a></li>
+                                    <h5 class="category">Gatecrash</h5>
+                                    <li><a href='https://bit.ly/MTG-GTC-Orzhov-Oppression'>Orzhov Oppression</a></li>
+                                    <li><a href='https://bit.ly/MTG-GTC-Dimir-Dementia'>Dimir Dementia</a></li>
+                                    <li><a href='https://bit.ly/MTG-GTC-Gruul-Goliaths'>Gruul Goliaths</a></li>
+                                    <li><a href='https://bit.ly/MTG-GTC-Boros-Battalion'>Boros Battalion</a></li>
+                                    <li><a href='https://bit.ly/MTG-GTC-Simic-Synthesis'>Simic Synthesis</a></li>
 
-                                <li class="category">Magic 2011</li>
-                                <li><a class="missing">Blades of Victory</a></li>
-                                <li><a class="missing">Power of Prophecy</a></li>
-                                <li><a class="missing">Reign of Vampirism</a></li>
-                                <li><a class="missing">Breath of Fire</a></li>
-                                <li><a class="missing">Stampede of Beasts</a></li>
+                                    <h5 class="category">Dragon's Maze</h5>
+                                    <li><a href='https://bit.ly/MTG-DGM-Azorius-Authority'>Azorius Authority</a></li>
+                                    <li><a href='https://bit.ly/MTG-DGM-Orzhov-Power'>Orzhov Power</a></li>
+                                    <li><a href='https://bit.ly/MTG-DGM-Rakdos-Revelry'>Rakdos Revelry</a></li>
+                                    <li><a href='https://bit.ly/MTG-DGM-Gruul-Siege'>Gruul Siege</a></li>
+                                    <li><a href='https://bit.ly/MTG-DGM-Simic-Domination'>Simic Domination</a></li>
+                                </ul>
 
-                                <li class="category">Magic 2010</li>
-                                <li><a class="missing">We Are Legion</a></li>
-                                <li><a class="missing">Presence of Mind</a></li>
-                                <li><a class="missing">Death's Minions</a></li>
-                                <li><a class="missing">Firebomber</a></li>
-                                <li><a class="missing">Nature's Fury</a></li>
-                            </ul>
-                        </div>
+                                <h4>Innistrad Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Innistrad</h5>
+                                    <li><a class="missing">Spectral Legions</a></li>
+                                    <li><a class="missing">Eldritch Onslaught</a></li>
+                                    <li><a class="missing">Deathly Dominion</a></li>
+                                    <li><a class="missing">Carnival of Blood</a></li>
+                                    <li><a class="missing">Repel the Dark</a></li>
+
+                                    <h5 class="category">Dark Ascension</h5>
+                                    <li><a class="missing">Swift Justice</a></li>
+                                    <li><a class="missing">Relentless Dead</a></li>
+                                    <li><a href='https://bit.ly/MTG-DKA-Monstrous-Surprise'>Monstrous Surprise</a></li>
+                                    <li><a href='https://bit.ly/MTG-DKA-Grave-Power'>Grave Power</a></li>
+                                    <li><a class="missing">Dark Sacrifice</a></li>
+
+                                    <h5 class="category">Avacyn Restored</h5>
+                                    <li><a class="missing">Angelic Might</a></li>
+                                    <li><a href='https://bit.ly/MTG-AVR-Solitary-Fiends'>Solitary Fiends</a></li>
+                                    <li><a class="missing">Slaughterhouse</a></li>
+                                    <li><a class="missing">Fiery Dawn</a></li>
+                                    <li><a href='https://bit.ly/MTG-AVR-Bound-by-Strength'>Bound by Strength</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Scars Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Scars of Mirrodin</h5>
+                                    <li><a class="missing">Myr of Mirrodin</a></li>
+                                    <li><a class="missing">Metalcraft</a></li>
+                                    <li><a class="missing">Deadspread</a></li>
+                                    <li><a class="missing">Relic Breaker</a></li>
+                                    <li><a class="missing">Phyrexian Poison</a></li>
+
+                                    <h5 class="category">Mirrodin Besieged</h5>
+                                    <li><a class="missing">Path of Blight</a></li>
+                                    <li><a class="missing">Doom Inevitable</a></li>
+                                    <li><a class="missing">Mirromancy</a></li>
+                                    <li><a class="missing">Battle Cries</a></li>
+
+                                    <h5 class="category">New Phyrexia</h5>
+                                    <li><a class="missing">Artful Destruction</a></li>
+                                    <li><a class="missing">Devouring Skies</a></li>
+                                    <li><a class="missing">Feast of Flesh</a></li>
+                                    <li><a class="missing">Life for Death</a></li>
+                                    <li><a class="missing">Ravaging Swarm</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Zendikar Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Zendikar</h5>
+                                    <li><a class="missing">Kor Armory</a></li>
+                                    <li><a class="missing">Rise of the Vampires</a></li>
+                                    <li><a class="missing">Unstable Terrain</a></li>
+                                    <li><a class="missing">Pumped Up</a></li>
+                                    <li><a class="missing">The Adventurers</a></li>
+
+                                    <h5 class="category">Worldwake</h5>
+                                    <li><a class="missing">Brute Force</a></li>
+                                    <li><a class="missing">Fangs of the Bloodchief</a></li>
+                                    <li><a class="missing">Mysterious Realms</a></li>
+                                    <li><a class="missing">Rapid Fire</a></li>
+                                    <li><a class="missing">Flyover</a></li>
+
+                                    <h5 class="category">Rise of the Eldrazi</h5>
+                                    <li><a class="missing">Levelers' Glory</a></li>
+                                    <li><a class="missing">Levelers' Scorn</a></li>
+                                    <li><a class="missing">Invading Spawn</a></li>
+                                    <li><a class="missing">Eldrazi Arisen</a></li>
+                                    <li><a class="missing">Totem Power</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Alara Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Shards of Alara</h5>
+                                    <li><a class="missing">Bant Exalted</a></li>
+                                    <li><a class="missing">Esper Artifice</a></li>
+                                    <li><a class="missing">Grixis Undead</a></li>
+                                    <li><a class="missing">Primordial Jund</a></li>
+                                    <li><a class="missing">Naya Behemoths</a></li>
+
+                                    <h5 class="category">Conflux</h5>
+                                    <li><a class="missing">Bant on the March</a></li>
+                                    <li><a class="missing">Esper Air Assault</a></li>
+                                    <li><a class="missing">Grixis Shambling Army</a></li>
+                                    <li><a class="missing">Jund Appetite for War</a></li>
+                                    <li><a class="missing">Naya Domain</a></li>
+
+                                    <h5 class="category">Alara Reborn</h5>
+                                    <li><a class="missing">Legion Aloft</a></li>
+                                    <li><a class="missing">Unnatural Schemes</a></li>
+                                    <li><a class="missing">Dead Ahead</a></li>
+                                    <li><a class="missing">Rumbler</a></li>
+                                    <li><a class="missing">Eternal Siege</a></li>
+                                </ul>
+
+                                <h4>Core Sets</h4>
+                                <ul class="list">
+                                    <h5 class="category">Magic Origins</h5>
+                                    <li><a class="missing">Brave the Battle</a></li>
+                                    <li><a class="missing">Take to the Sky</a></li>
+                                    <li><a class="missing">Demonic Deals</a></li>
+                                    <li><a class="missing">Assemble Victory</a></li>
+                                    <li><a class="missing">Hunting Pack</a></li>
+
+                                    <h5 class="category">Magic 2015</h5>
+                                    <li><a class="missing">Price of Glory</a></li>
+                                    <li><a class="missing">Hit the Ground Running</a></li>
+                                    <li><a class="missing">Infernal Intervention</a></li>
+                                    <li><a class="missing">Flames of the Dragon</a></li>
+                                    <li><a class="missing">Will of the Masses</a></li>
+
+                                    <h5 class="category">Magic 2014</h5>
+                                    <li><a class="missing">Lightforce</a></li>
+                                    <li><a class="missing">Psychic Labyrinth</a></li>
+                                    <li><a class="missing">Death Reaper</a></li>
+                                    <li><a class="missing">Fire Surge</a></li>
+                                    <li><a class="missing">Bestial Strength</a></li>
+
+                                    <h5 class="category">Magic 2013</h5>
+                                    <li><a href='https://bit.ly/MTG-M13-Path-to-Victory'>Path to Victory</a></li>
+                                    <li><a class="missing">Depths of Power</a></li>
+                                    <li><a href='https://bit.ly/MTG-M13-Sole-Domination'>Sole Domination</a></li>
+                                    <li><a class="missing">Mob Rule</a></li>
+                                    <li><a class="missing">Wild Rush</a></li>
+
+                                    <h5 class="category">Magic 2012</h5>
+                                    <li><a class="missing">Sacred Assault</a></li>
+                                    <li><a href='https://bit.ly/MTG-M12-Mystical-Might'>Mystical Might</a></li>
+                                    <li><a class="missing">Grab for Power</a></li>
+                                    <li><a href='https://bit.ly/MTG-M12-Blood-and-Fire'>Blood &amp; Fire</a></li>
+                                    <li><a class="missing">Entangling Webs</a></li>
+
+                                    <h5 class="category">Magic 2011</h5>
+                                    <li><a class="missing">Blades of Victory</a></li>
+                                    <li><a class="missing">Power of Prophecy</a></li>
+                                    <li><a class="missing">Reign of Vampirism</a></li>
+                                    <li><a class="missing">Breath of Fire</a></li>
+                                    <li><a class="missing">Stampede of Beasts</a></li>
+
+                                    <h5 class="category">Magic 2010</h5>
+                                    <li><a class="missing">We Are Legion</a></li>
+                                    <li><a class="missing">Presence of Mind</a></li>
+                                    <li><a class="missing">Death's Minions</a></li>
+                                    <li><a class="missing">Firebomber</a></li>
+                                    <li><a class="missing">Nature's Fury</a></li>
+                                </ul>
+
+                        </div> <!-- Intro Packs -->
+
+                    </div> <!-- Intro Pack wrap -->
+
+                    <div class='list_wrap' id='theme'>
+
+                        <h3 class="discontinued" data-count='21'>Theme Decks</h3>
+                        <div class="list">
+
+                                <h4 class="disabled">Shadowmoor Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Shadowmoor</h5>
+                                    <li><a class="missing">Aura Mastery</a></li>
+                                    <li><a class="missing">Mortal Coil</a></li>
+                                    <li><a class="missing">Army of Entropy</a></li>
+                                    <li><a class="missing">Overkill</a></li>
+                                    <li><a class="missing">Turnabout</a></li>
+
+                                    <h5 class="category">Eventide</h5>
+                                    <li><a class="missing">Battle Blitz</a></li>
+                                    <li><a class="missing">Death March</a></li>
+                                    <li><a class="missing">Life Drain</a></li>
+                                    <li><a class="missing">Sidestep</a></li>
+                                    <li><a class="missing">Superabundance</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Lorwyn Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Lorwyn</h5>
+                                    <li><a class="missing">Kithkin Militia</a></li>
+                                    <li><a class="missing">Merrow Riverways</a></li>
+                                    <li><a class="missing">Boggart Feast</a></li>
+                                    <li><a class="missing">Elvish Predation</a></li>
+                                    <li><a class="missing">Elemental's Path</a></li>
+
+                                    <h5 class="category">Morningtide</h5>
+                                    <li><a class="missing">Battalion</a></li>
+                                    <li><a class="missing">Going Rogue</a></li>
+                                    <li><a class="missing">Shamanism</a></li>
+                                    <li><a class="missing">Warrior's Code</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Time Spiral Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Time Spiral</h5>
+                                    <li><a class="missing">Fun With Fungus</a></li>
+                                    <li><a class="missing">Hope's Crusaders</a></li>
+                                    <li><a class="missing">Reality Fracture</a></li>
+                                    <li><a class="missing">Sliver Evolution</a></li>
+
+                                    <h5 class="category">Planar Chaos</h5>
+                                    <li><a class="missing">Endless March</a></li>
+                                    <li><a class="missing">Ixidor's Legacy</a></li>
+                                    <li><a class="missing">Rituals of Rebirth</a></li>
+                                    <li><a class="missing">Unraveling Mind</a></li>
+
+                                    <h5 class="category">Future Sight</h5>
+                                    <li><a class="missing">Fate Blaster</a></li>
+                                    <li><a class="missing">Future Shock</a></li>
+                                    <li><a class="missing">Rebels Unite</a></li>
+                                    <li><a class="missing">Suspended Sentence</a></li>
+                                </ul>
+
+                                <h4>Coldsnap</h4>
+                                <ul class="list">
+                                    <li><a href='https://bit.ly/MTG-CSP-Aurochs-Stampede'>Aurochs Stampede</a></li>
+                                    <li><a href='https://bit.ly/MTG-CSP-Beyond-the-Grave'>Beyond the Grave</a></li>
+                                    <li><a href='https://bit.ly/MTG-CSP-Kjeldoran-Cunning'>Kjeldoran Cunning</a></li>
+                                    <li><a class="missing">Snowscape</a></li>
+                                </ul>
+
+                                <h4>Ravnica Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Ravnica: City of Guilds</h5>
+                                    <li><a class="missing">Charge of the Boros</a></li>
+                                    <li><a class="missing">Dimir Intrigues</a></li>
+                                    <li><a href='https://bit.ly/MTG-RAV-Golgari-Deathcreep'>Golgari Deathcreep</a></li>
+                                    <li><a class="missing">Selesnya United</a></li>
+
+                                    <h5 class="category">Guildpact</h5>
+                                    <li><a class="missing">Code of the Orzhov</a></li>
+                                    <li><a class="missing">Gruul Wilding</a></li>
+                                    <li><a href='https://bit.ly/MTG-GPT-Izzet-Gizmometry'>Izzet Gizmometry</a></li>
+
+                                    <h5 class="category">Dissension</h5>
+                                    <li><a href='https://bit.ly/MTG-DIS-Azorius-Ascendant'>Azorius Ascendant</a></li>
+                                    <li><a href='https://bit.ly/MTG-DIS-Simic-Mutology'>Simic Mutology</a></li>
+                                    <li><a href='https://bit.ly/MTG-DIS-Rakdos-Bloodsport'>Rakdos Bloodsport</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Kamigawa Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Champions of Kamigawa</h5>
+                                    <li><a class="missing">Kami Reborn</a></li>
+                                    <li><a class="missing">Snake's Path</a></li>
+                                    <li><a class="missing">Spiritbane</a></li>
+                                    <li><a class="missing">Way of the Warrior</a></li>
+
+                                    <h5 class="category">Betrayers of Kamigawa</h5>
+                                    <li><a class="missing">Dark Devotion</a></li>
+                                    <li><a class="missing">Ninjutsu</a></li>
+                                    <li><a class="missing">Rats' Nest</a></li>
+                                    <li><a class="missing">Spiritcraft</a></li>
+
+                                    <h5 class="category">Saviors of Kamigawa</h5>
+                                    <li><a class="missing">Critical Mass</a></li>
+                                    <li><a class="missing">Soratami's Wisdom</a></li>
+                                    <li><a class="missing">Spirit Flames</a></li>
+                                    <li><a class="missing">Truth Seekers</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Mirrodin Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Mirrodin</h5>
+                                    <li><a class="missing">Bait & Bludgeon</a></li>
+                                    <li><a class="missing">Little Bashers</a></li>
+                                    <li><a class="missing">Sacrificial Bam</a></li>
+                                    <li><a class="missing">Wicked Big</a></li>
+
+                                    <h5 class="category">Darksteel</h5>
+                                    <li><a class="missing">Master Blaster</a></li>
+                                    <li><a class="missing">Mind Swarm</a></li>
+                                    <li><a class="missing">Swarm & Slam</a></li>
+                                    <li><a class="missing">Transference</a></li>
+
+                                    <h5 class="category">Fifth Dawn</h5>
+                                    <li><a class="missing">Nuts and Bolts</a></li>
+                                    <li><a class="missing">Special Forces</a></li>
+                                    <li><a class="missing">Stampede</a></li>
+                                    <li><a class="missing">Sunburst</a></li>
+                                </ul>
+
+                                <h4>Onslaught Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Onslaught</h5>
+                                    <li><a class="missing">Bait and Switch</a></li>
+                                    <li><a class="missing">Celestial Assault</a></li>
+                                    <li><a class="missing">Devastation</a></li>
+                                    <li><a class="missing">Ivory Doom</a></li>
+
+                                    <h5 class="category">Legions</h5>
+                                    <li><a class="missing">Elvish Rage</a></li>
+                                    <li><a class="missing">Morph Mayhem</a></li>
+                                    <li><a class="missing">Sliver Shivers</a></li>
+                                    <li><a class="missing">Zombies Unleashed</a></li>
+
+                                    <h5 class="category">Scourge</h5>
+                                    <li><a href='https://bit.ly/MTG-SCG-Goblin-Mob'>Goblin Mob</a></li>
+                                    <li><a class="missing">Max Attax</a></li>
+                                    <li><a class="missing">Pulverize</a></li>
+                                    <li><a class="missing">Storm Surge</a></li>
+                                </ul>
+
+                                <h4>Odyssey Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Odyssey</h5>
+                                    <li><a href='https://bit.ly/MTG-ODY-Liftoff'>Liftoff</a></li>
+                                    <li><a href='https://bit.ly/MTG-ODY-One-Two-Punch'>One-Two Punch</a></li>
+                                    <li><a href='https://bit.ly/MTG-ODY-Pressure-Cooker'>Pressure Cooker</a></li>
+                                    <li><a href='https://bit.ly/MTG-ODY-Trounce-O-Matic'>Trounce-O-Matic</a></li>
+
+                                    <h5 class="category">Torment</h5>
+                                    <li><a href='https://bit.ly/MTG-TOR-Sacrilege'>Sacrilege</a></li>
+                                    <li><a href='https://bit.ly/MTG-TOR-Grave-Danger'>Grave Danger</a></li>
+                                    <li><a href='https://bit.ly/MTG-TOR-Waking-Nightmares'>Waking Nightmares</a></li>
+                                    <li><a href='https://bit.ly/MTG-TOR-Insanity'>Insanity</a></li>
+
+                                    <h5 class="category">Judgment</h5>
+                                    <li><a class="missing">Air Razers</a></li>
+                                    <li><a href='https://bit.ly/MTG-JUD-Inundation'>Inundation</a></li>
+                                    <li><a class="missing">Painflow</a></li>
+                                    <li><a class="missing">Spectral Slam</a></li>
+                                </ul>
+
+                                <h4>Invasion Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Invasion</h5>
+                                    <li><a class="missing">Blowout</a></li>
+                                    <li><a class="missing">Dismissal</a></li>
+                                    <li><a class="missing">Heavy Duty</a></li>
+                                    <li><a class="missing">Spectrum</a></li>
+
+                                    <h5 class="category">Planeshift</h5>
+                                    <li><a class="missing">Barrage</a></li>
+                                    <li><a class="missing">Comeback</a></li>
+                                    <li><a href='https://bit.ly/MTG-PLS-Domain'>Domain</a></li>
+                                    <li><a class="missing">Scout</a></li>
+
+                                    <h5 class="category">Apocalypse</h5>
+                                    <li><a class="missing">Burial</a></li>
+                                    <li><a class="missing">Pandemonium</a></li>
+                                    <li><a class="missing">Swoop</a></li>
+                                    <li><a class="missing">Whirlpool</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Masques Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Mercadian Masques</h5>
+                                    <li><a class="missing">Deepwood Menace</a></li>
+                                    <li><a class="missing">Disruptor</a></li>
+                                    <li><a class="missing">Rebel's Call</a></li>
+                                    <li><a class="missing">Tidal Mastery</a></li>
+
+                                    <h5 class="category">Nemesis</h5>
+                                    <li><a class="missing">Breakdown</a></li>
+                                    <li><a class="missing">Eruption</a></li>
+                                    <li><a class="missing">Mercenaries</a></li>
+                                    <li><a class="missing">Replicator</a></li>
+
+                                    <h5 class="category">Prophecy</h5>
+                                    <li><a class="missing">Distress</a></li>
+                                    <li><a class="missing">Pummel</a></li>
+                                    <li><a class="missing">Slither</a></li>
+                                    <li><a class="missing">Turnaround</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Urza's Block</h4>
+                                <ul class="list">
+                                    <li class="category">Urza's Saga</li>
+                                    <li><a class="missing">The Plague</a></li>
+                                    <li><a class="missing">Sleeper</a></li>
+                                    <li><a class="missing">Special Delivery</a></li>
+                                    <li><a class="missing">Tombstone</a></li>
+
+                                    <li class="category">Urza's Legacy</li>
+                                    <li><a class="missing">Crusher</a></li>
+                                    <li><a class="missing">Phyrexian Assault</a></li>
+                                    <li><a class="missing">Radiant's Revenge</a></li>
+                                    <li><a class="missing">Time Drain</a></li>
+
+                                    <li class="category">Urza's Destiny</li>
+                                    <li><a class="missing">Assassin</a></li>
+                                    <li><a class="missing">Battle Surge</a></li>
+                                    <li><a class="missing">Enchanter</a></li>
+                                    <li><a class="missing">Fiendish Nature</a></li>
+                                </ul>
+
+                                <h4>Tempest Block</h4>
+                                <ul class="list">
+                                    <h5 class="category">Tempest</h5>
+                                    <li><a class="missing">Deep Freeze</a></li>
+                                    <li><a class="missing">The Flames of Rath</a></li>
+                                    <li><a class="missing">The Slivers</a></li>
+                                    <li><a class="missing">The Swarm</a></li>
+
+                                    <h5 class="category">Stronghold</h5>
+                                    <li><a class="missing">Call of the Kor</a></li>
+                                    <li><a class="missing">Migraine</a></li>
+                                    <li><a href='https://bit.ly/MTG-STH-The-Sparkler'>The Sparkler</a></li>
+                                    <li><a class="missing">The Spikes</a></li>
+
+                                    <h5 class="category">Exodus</h5>
+                                    <li><a href='https://bit.ly/MTG-EXO-Dominator'>Dominator</a></li>
+                                    <li><a class="missing">Groundbreaker</a></li>
+                                    <li><a class="missing">White Heat</a></li>
+                                    <li><a class="missing">Widowmaker</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Core Sets</h4>
+                                <ul class="list">
+                                    <h5 class="category">10th Edition</h5>
+                                    <li><a class="missing">Cho-Manno's Resolve</a></li>
+                                    <li><a class="missing">Arcanis's Guile</a></li>
+                                    <li><a class="missing">Evincar's Tyranny</a></li>
+                                    <li><a class="missing">Kamahl's Temper</a></li>
+                                    <li><a class="missing">Molimo's Might</a></li>
+
+                                    <h5 class="category">9th Edition</h5>
+                                    <li><a class="missing">Army of Justice</a></li>
+                                    <li><a class="missing">Lofty Heights</a></li>
+                                    <li><a class="missing">Dead Again</a></li>
+                                    <li><a class="missing">World Aflame</a></li>
+                                    <li><a class="missing">Custom Creatures</a></li>
+
+                                    <h5 class="category">8th Edition</h5>
+                                    <li><a class="missing">Life Boost</a></li>
+                                    <li><a class="missing">Sky Slam</a></li>
+                                    <li><a class="missing">Expulsion</a></li>
+                                    <li><a class="missing">Speed Scorch</a></li>
+                                    <li><a class="missing">Heavy Hitters</a></li>
+
+                                    <h5 class="category">7th Edition</h5>
+                                    <li><a class="missing">Armada</a></li>
+                                    <li><a class="missing">Bomber</a></li>
+                                    <li><a class="missing">Decay</a></li>
+                                    <li><a class="missing">Infestation</a></li>
+                                    <li><a class="missing">Way Wild</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Starter Sets</h4>
+                                <ul class="list">
+                                    <h5 class="category">Starter 1999</h5>
+                                    <li><a class="missing">Blinding Fury</a></li>
+                                    <li><a class="missing">Time Curse</a></li>
+                                    <li><a class="missing">Deadly Instinct</a></li>
+                                    <li><a class="missing">Goblin Assault</a></li>
+                                    <li><a class="missing">Impaler</a></li>
+
+                                    <h5 class="category">Portal Three Kingdoms</h5>
+                                    <li><a class="missing">Shu Kingdom</a></li>
+                                    <li><a class="missing">Wu Kingdom</a></li>
+                                    <li><a class="missing">Wei Kingdom</a></li>
+
+                                    <h5 class="category">Portal Second Age</h5>
+                                    <li><a class="missing">Martial Law</a></li>
+                                    <li><a class="missing">Spellweaver</a></li>
+                                    <li><a class="missing">Night Stalkers</a></li>
+                                    <li><a class="missing">Goblin Fire</a></li>
+                                    <li><a class="missing">Nature's Assault</a></li>
+                                </ul>
+
+                        </div> <!-- Theme Decks -->
+
+                    </div> <!-- Theme Deck wrap -->
+
+                    <div class='list_wrap' id='starter'>
+
+                        <h3 data-count='2'>Two-Player Starter Sets</h3>
+                        <ul class="list">
+
+                            <h4 class="category">Spellslinger Kits</h4>
+                            <li><a href='https://bit.ly/MTG-M20-Spellslinger'>Spellslinger Starter Kit</a><span class='set'>(M20)</span></li>
+                            <li><a href='https://bit.ly/MTG-Spellslinger-Starter'>Spellslinger Starter Kit</a></li>
+
+                            <h4 class="category">Core Sets</h4>
+                            <li><a class="missing">9th Edition Core Game</a></li>
+                            <li><a class="missing">8th Edition Core Game</a></li>
+                            <li><a class="missing">7th Edition set</a></li>
+                            <li><a class="missing">6th Edition set</a></li>
+                            <li><a class="missing">5th Edition set</a></li>
+
+                            <h4 class="category">Starter Editions</h4>
+                            <li><a class="missing">Starter 2000 Game Box</a></li>
+                            <li><a class="missing">Starter 1999 Game Box</a></li>
+
+                            <h4 class="category">Portal Editions</h4>
+                            <li><a class="missing">Portal Three Kingdoms set</a></li>
+                            <li><a class="missing">Portal Second Age set</a></li>
+                            <li><a class="missing">Portal set</a></li>
+
+                            <h4 class="category">Early Products</h4>
+                            <li><a class='missing'>Introductory Two-Player Set</a></li>
+                            <li><a class='missing'>Rivals Quick Start Set</a></li>
+
+                        </ul> <!-- Starter Sets -->
+
+                    </div> <!-- Starter Set wrap -->
+
+                    <div class='list_wrap' id='welcome'>
+
+                        <h3 data-count='5'>Sample / Welcome Decks</h3>
+                        <div class="list">
+
+                                <h4>Core Set 2020</h4>
+                                <ul class="list">
+                                    <li><a href='https://bit.ly/MTG-M20-Welcome-All'>ALL 5 DECKS</a></li>
+                                    <br />
+                                    <li><a href='https://bit.ly/MTG-M20-Welcome-White'>White</a></li>
+                                    <li><a href='https://bit.ly/MTG-M20-Welcome-Blue'>Blue</a></li>
+                                    <li><a href='https://bit.ly/MTG-M20-Welcome-Black'>Black</a></li>
+                                    <li><a href='https://bit.ly/MTG-M20-Welcome-Red'>Red</a></li>
+                                    <li><a href='https://bit.ly/MTG-M20-Welcome-Green'>Green</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Core Set 2019</h4>
+                                <ul class="list">
+                                    <li><a class='missing'>ALL 5 DECKS</a></li>
+                                    <br />
+                                    <li><a class='missing'>White</a></li>
+                                    <li><a class='missing'>Blue</a></li>
+                                    <li><a class='missing'>Black</a></li>
+                                    <li><a class='missing'>Red</a></li>
+                                    <li><a class='missing'>Green</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Welcome Deck 2017</h4>
+                                <ul class="list">
+                                    <li><a class='missing'>ALL 5 DECKS</a></li>
+                                    <br />
+                                    <li><a class='missing'>White</a></li>
+                                    <li><a class='missing'>Blue</a></li>
+                                    <li><a class='missing'>Black</a></li>
+                                    <li><a class='missing'>Red</a></li>
+                                    <li><a class='missing'>Green</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Welcome Deck 2016</h4>
+                                <ul class="list">
+                                    <li><a class='missing'>ALL 5 DECKS</a></li>
+                                    <br />
+                                    <li><a class='missing'>White</a></li>
+                                    <li><a class='missing'>Blue</a></li>
+                                    <li><a class='missing'>Black</a></li>
+                                    <li><a class='missing'>Red</a></li>
+                                    <li><a class='missing'>Green</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Magic Origins</h4>
+                                <ul class="list">
+                                    <li><a class='missing'>ALL 5 DECKS</a></li>
+                                    <br />
+                                    <li><a class='missing'>White</a></li>
+                                    <li><a class='missing'>Blue</a></li>
+                                    <li><a class='missing'>Black</a></li>
+                                    <li><a class='missing'>Red</a></li>
+                                    <li><a class='missing'>Green</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Magic 2015</h4>
+                                <ul class="list">
+                                    <li><a class='missing'>ALL 5 DECKS</a></li>
+                                    <br />
+                                    <li><a class='missing'>White</a></li>
+                                    <li><a class='missing'>Blue</a></li>
+                                    <li><a class='missing'>Black</a></li>
+                                    <li><a class='missing'>Red</a></li>
+                                    <li><a class='missing'>Green</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Magic 2014</h4>
+                                <ul class="list">
+                                    <li><a class='missing'>ALL 5 DECKS</a></li>
+                                    <br />
+                                    <li><a class='missing'>White</a></li>
+                                    <li><a class='missing'>Blue</a></li>
+                                    <li><a class='missing'>Black</a></li>
+                                    <li><a class='missing'>Red</a></li>
+                                    <li><a class='missing'>Green</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Magic 2013</h4>
+                                <ul class="list">
+                                    <li><a class='missing'>ALL 5 DECKS</a></li>
+                                    <br />
+                                    <li><a class='missing'>White</a></li>
+                                    <li><a class='missing'>Blue</a></li>
+                                    <li><a class='missing'>Black</a></li>
+                                    <li><a class='missing'>Red</a></li>
+                                    <li><a class='missing'>Green</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Magic 2012</h4>
+                                <ul class="list">
+                                    <li><a class='missing'>ALL 10 DECKS</a></li>
+                                    <br />
+                                    <li><a class='missing'>White (A)</a><a class='missing'>White (B)</a></li>
+                                    <li><a class='missing'>Blue (A)</a><a class='missing'>Blue (B)</a></li>
+                                    <li><a class='missing'>Black (A)</a><a class='missing'>Black (B)</a></li>
+                                    <li><a class='missing'>Red (A)</a><a class='missing'>Red (B)</a></li>
+                                    <li><a class='missing'>Green (A)</a><a class='missing'>Green (B)</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Magic 2011</h4>
+                                <ul class="list">
+                                    <li><a class='missing'>ALL 10 DECKS</a></li>
+                                    <br />
+                                    <li><a class='missing'>White (A)</a><a class='missing'>White (B)</a></li>
+                                    <li><a class='missing'>Blue (A)</a><a class='missing'>Blue (B)</a></li>
+                                    <li><a class='missing'>Black (A)</a><a class='missing'>Black (B)</a></li>
+                                    <li><a class='missing'>Red (A)</a><a class='missing'>Red (B)</a></li>
+                                    <li><a class='missing'>Green (A)</a><a class='missing'>Green (B)</a></li>
+                                </ul>
+
+                                <h4 class="disabled">Tenth Edition</h4>
+                                <ul class="list">
+                                    <li><a class='missing'>ALL 10 DECKS</a></li>
+                                    <br />
+                                    <li><a class='missing'>White (A)</a><a class='missing'>White (B)</a></li>
+                                    <li><a class='missing'>Blue (A)</a><a class='missing'>Blue (B)</a></li>
+                                    <li><a class='missing'>Black (A)</a><a class='missing'>Black (B)</a></li>
+                                    <li><a class='missing'>Red (A)</a><a class='missing'>Red (B)</a></li>
+                                    <li><a class='missing'>Green (A)</a><a class='missing'>Green (B)</a></li>
+                                </ul>
+
+                        </div> <!-- Welcome Decks -->
+
+                    </div> <!-- Welcome Deck wrap -->
+
+                    <div class='list_wrap' id='toolkits'>
+
+                        <h3 data-count='4'>Deck Builder's Toolkits</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-THB-Toolkit'>Theros Beyond Death</a></li>
+                            <li><a href='https://bit.ly/MTG-M20-Toolkit'>Core Set 2020</a></li>
+                            <li><a href='https://bit.ly/MTG-RNA-Toolkit'>Ravnica Allegiance</a></li>
+                            <li><a href='https://bit.ly/MTG-M19-Toolkit'>Core Set 2019</a></li>
+                        </ul>
+
+                    </div> <!-- Toolkit wrap -->
+
+                </div> <!-- Beginner -->
+
+            </div> <!-- Beginner wrap -->
+
+        </div> <!-- Column #1 -->
+
+        <div class='column' id='col_2'>
+
+            <div class='list_wrap list_group' id='standard'>
+
+                <h2>Standard On-Ramp</h2>
+                <div class="list">
+
+                    <div class='list_wrap' id="challenger">
+
+                        <h3 data-count='14'>Challenger Decks</h3>
+                        <ul class="list">
+
+                            <p class="includes">
+                                60 card deck, 15 card sideboard, and accompanying tokens (2020 and later)
+                            </p>
+
+                            <h4 class='category'>2020</h4>
+                            <li><a href="https://bit.ly/MTG-Challenger2020-All">ALL 4 DECKS</a></li>
+                            <li><a href="https://bit.ly/MTG-Allied-Fires">Allied Fires</a></li>
+                            <li><a href="https://bit.ly/MTG-Cavalcade-Charge">Cavalcade Charge</a></li>
+                            <li><a href="https://bit.ly/MTG-Final-Adventure">Final Adventure</a></li>
+                            <li><a href="https://bit.ly/MTG-Flash-of-Ferocity">Flash of Ferocity</a></li>
+
+                            <h4 class='category'>2019</h4>
+                            <li><a href="https://bit.ly/MTG-Challenger2019-All">ALL 4 DECKS</a></li>
+                            <li><a href="https://bit.ly/MTG-United-Assault">United Assault</a></li>
+                            <li><a href="https://bit.ly/MTG-Lightning-Aggro">Lightning Aggro</a></li>
+                            <li><a href="https://bit.ly/MTG-Deadly-Discovery">Deadly Discovery</a></li>
+                            <li><a href="https://bit.ly/MTG-Arcane-Tempo">Arcane Tempo</a></li>
+                            <br />
+                            <li><span class="note">Japan exclusives:</span></li>
+                            <li><a href="https://bit.ly/MTG-Challenger-Awakening-Earth">Awakening Earth<img src="https://deckbox.org/images/icon_spacer_16_11.png" class="flag flag-jp" /></a></li>
+                            <li><a href="https://bit.ly/MTG-Challenger-Song-Dance">Song Dance<img src="https://deckbox.org/images/icon_spacer_16_11.png" class="flag flag-jp" /></a></li>
+
+                            <h4 class='category'>2018</h4>
+                            <li><a href="https://bit.ly/MTG-Challenger2018-All">ALL 4 DECKS</a></li>
+                            <li><a href="https://bit.ly/MTG-Hazoret-Aggro">Hazoret Aggro</a></li>
+                            <li><a href="https://bit.ly/MTG-Vehicle-Rush">Vehicle Rush</a></li>
+                            <li><a href="https://bit.ly/MTG-Second-Sun-Control">Second Sun Control</a></li>
+                            <li><a href="https://bit.ly/MTG-Counter-Surge">Counter Surge</a></li>
+                        </ul>
+
+                    </div> <!-- Challenger Deck wrap -->
+
+                    <div class='list_wrap' id="clash">
+
+                        <h3 class="discontinued" data-count='3'>Clash Packs</h3>
+                        <ul class="list">
+                            <p class="includes">
+                                both 60 card decks
+                            </p>
+                            <li><a href="https://bit.ly/MTG-ORI-Clash">Armed &amp; Dangerous</a><span class="set">(ORI)</span></li>
+                            <li><a href="https://bit.ly/MTG-FRF-Clash">Power &amp; Profit</a><span class="set">(FRF)</span></li>
+                            <li><a href="https://bit.ly/MTG-M15-Clash">Fate &amp; Fury</a><span class="set">(M15)</span></li>
+                        </ul>
+
+                    </div> <!-- Class Pack wrap -->
+
+                    <div class='list_wrap' id="event">
+
+                        <h3 class="discontinued" data-count='26'>Event Decks</h3>
+                        <ul class="list">
+
+                            <p class="includes">
+                                60 card deck and 15 card sideboard
+                            </p>
+
+                            <li><a href='https://bit.ly/MTG-BFZ-Ultimate-Sacrifice'>Ultimate Sacrifice</a><span class="set">(BFZ)</span></li>
+                            <li><a href='https://bit.ly/MTG-DTK-Landslide-Charge'>Landslide Charge</a><span class="set">(DTK)</span></li>
+                            <li><a href='https://bit.ly/MTG-KTK-Conquering-Hordes'>Conquering Hordes</a><span class="set">(KTK)</span></li>
+                            <li><a href='https://bit.ly/MTG-JOU-Wrath-of-Mortals'>Wrath of the Mortals</a><span class="set">(JOU)</span></li>
+                            <li><a href='https://bit.ly/MTG-BNG-Underworld-Herald'>Underworld Herald</a><span class="set">(BNG)</span></li>
+                            <li><a href='https://bit.ly/MTG-THS-Inspiring-Heroics'>Inspiring Heroics</a><span class="set">(THS)</span></li>
+                            <li><a href='https://bit.ly/MTG-M14-Rush-of-the-Wild'>Rush of the Wild</a><span class="set">(M14)</span></li>
+                            <li><a href='https://bit.ly/MTG-DGM-Strength-of-Selesnya'>Strength of Selesnya</a><span class="set">(DGM)</span></li>
+                            <li><a href='https://bit.ly/MTG-GTC-Rally-and-Rout'>Rally &amp; Rout</a><span class="set">(GTC)</span></li>
+                            <li><a href='https://bit.ly/MTG-GTC-Thrive-and-Thrash'>Thrive &amp; Thrash</a><span class="set">(GTC)</span></li>
+                            <li><a href='https://bit.ly/MTG-RTR-Creep-and-Conquer'>Creep &amp; Conquer</a><span class="set">(RTR)</span></li>
+                            <li><a href='https://bit.ly/MTG-RTR-Wrack-and-Rage'>Wrack &amp; Rage</a><span class="set">(RTR)</span></li>
+                            <li><a href='https://bit.ly/MTG-M13-Sweet-Revenge'>Sweet Revenge</a><span class="set">(M13)</span></li>
+                            <li><a href='https://bit.ly/MTG-M13-Repeat-Performance'>Repeat Performance</a><span class="set">(M13)</span></li>
+                            <li><a href='https://bit.ly/MTG-AVR-Humanitys-Vengeance'>Humanity's Vengeance</a><span class="set">(AVR)</span></li>
+                            <li><a href='https://bit.ly/MTG-AVR-Deaths-Encroach'>Death's Encroach</a><span class="set">(AVR)</span></li>
+                            <li><a href='https://bit.ly/MTG-DKA-Gleeful-Flames' class="unverified">Gleeful Flames</a><span class="set">(DKA)</span></li>
+                            <li><a href='https://bit.ly/MTG-DKA-Spiraling-Doom'>Spiraling Doom</a><span class="set">(DKA)</span></li>
+                            <li><a href='https://bit.ly/MTG-ISD-Hold-the-Line' class="unverified">Hold the Line</a><span class="set">(ISD)</span></li>
+                            <li><a href='https://bit.ly/MTG-ISD-Deathfed' class="unverified">Deathfed</a><span class="set">(ISD)</span></li>
+                            <li><a href='https://bit.ly/MTG-M12-Illusionary-Might'>Illusionary Might</a><span class="set">(M12)</span></li>
+                            <li><a href='https://bit.ly/MTG-M12-Vampire-Onslaught'>Vampire Onslaught</a><span class="set">(M12)</span></li>
+                            <li><a href='https://bit.ly/MTG-NPH-War-of-Attrition'>War of Attrition</a><span class="set">(NPH)</span></li>
+                            <li><a href='https://bit.ly/MTG-NPH-Rot-from-Within' class="unverified">Rot from Within</a><span class="set">(NPH)</span></li>
+                            <li><a href='https://bit.ly/MTG-MBS-Into-the-Breach' class="unverified">Into the Breach</a><span class="set">(MBS)</span></li>
+                            <li><a href='https://bit.ly/MTG-MBS-Infect-and-Defile' class="unverified">Infect &amp; Defile</a><span class="set">(MBS)</span></li>
+
+                        </ul> <!-- Event Decks -->
+
+                    </div> <!-- Event Deck wrap -->
+
+                </div> <!-- Standard -->
+
+            </div> <!-- Standard wrap -->
+
+            <div class='list_wrap list_group' id='commander'>
+
+                <h2>Commander Series</h2>
+                <div class="list">
+
+                    <p class="includes">
+                        one deck and accompanying oversized cards and tokens (2014 and later)
+                    </p>
+
+                    <div class='list_wrap'>
+                        <h3 data-count='5'>Commander 2020</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-C20-All-Decks'>ALL 5 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-C20-Arcane-Maelstrom'>Arcane Maelstrom</a></li>
+                            <li><a href='https://bit.ly/MTG-C20-Enhanced-Evolution'>Enhanced Evolution</a></li>
+                            <li><a href='https://bit.ly/MTG-C20-Ruthless-Regiment'>Ruthless Regiment</a></li>
+                            <li class='warning note'>The CSV lists the 5x Human // Treasure tokens included with the deck as Soldier // Treasure, since it's incorrectly named that on Deckbox. It imports without error this way, and the incorrectly named card in your Inventory should update to the new name without issue once Sebi updates the database.<br /><br /></li>
+                            <li><a href='https://bit.ly/MTG-C20-Symbiotic-Swarm'>Symbiotic Swarm</a></li>
+                            <li><a href='https://bit.ly/MTG-C20-Timeless-Wisdom'>Timeless Wisdom</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="group level2" id='theme'>
-                    <h3 class="discontinued"><span class='count' data-count=' (21)'>Theme Decks</span></h3>
-                    <div class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-Theme-Decks'>download all</a>
-                        </span>
-                        <div class="group">
-                            <h4 class="disabled">Shadowmoor Block</h4>
-                            <ul class="list">
-                                <li class="category">Shadowmoor</li>
-                                <li><a class="missing">Aura Mastery</a></li>
-                                <li><a class="missing">Mortal Coil</a></li>
-                                <li><a class="missing">Army of Entropy</a></li>
-                                <li><a class="missing">Overkill</a></li>
-                                <li><a class="missing">Turnabout</a></li>
 
-                                <li class="category">Eventide</li>
-                                <li><a class="missing">Battle Blitz</a></li>
-                                <li><a class="missing">Death March</a></li>
-                                <li><a class="missing">Life Drain</a></li>
-                                <li><a class="missing">Sidestep</a></li>
-                                <li><a class="missing">Superabundance</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Lorwyn Block</h4>
-                            <ul class="list">
-                                <li class="category">Lorwyn</li>
-                                <li><a class="missing">Kithkin Militia</a></li>
-                                <li><a class="missing">Merrow Riverways</a></li>
-                                <li><a class="missing">Boggart Feast</a></li>
-                                <li><a class="missing">Elvish Predation</a></li>
-                                <li><a class="missing">Elemental's Path</a></li>
-
-                                <li class="category">Morningtide</li>
-                                <li><a class="missing">Battalion</a></li>
-                                <li><a class="missing">Going Rogue</a></li>
-                                <li><a class="missing">Shamanism</a></li>
-                                <li><a class="missing">Warrior's Code</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Time Spiral Block</h4>
-                            <ul class="list">
-                                <li class="category">Time Spiral</li>
-                                <li><a class="missing">Fun With Fungus</a></li>
-                                <li><a class="missing">Hope's Crusaders</a></li>
-                                <li><a class="missing">Reality Fracture</a></li>
-                                <li><a class="missing">Sliver Evolution</a></li>
-
-                                <li class="category">Planar Chaos</li>
-                                <li><a class="missing">Endless March</a></li>
-                                <li><a class="missing">Ixidor's Legacy</a></li>
-                                <li><a class="missing">Rituals of Rebirth</a></li>
-                                <li><a class="missing">Unraveling Mind</a></li>
-
-                                <li class="category">Future Sight</li>
-                                <li><a class="missing">Fate Blaster</a></li>
-                                <li><a class="missing">Future Shock</a></li>
-                                <li><a class="missing">Rebels Unite</a></li>
-                                <li><a class="missing">Suspended Sentence</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4>Coldsnap</h4>
-                            <ul class="list">
-                                <li><a href='https://bit.ly/MTG-CSP-Aurochs-Stampede'>Aurochs Stampede</a></li>
-                                <li><a href='https://bit.ly/MTG-CSP-Beyond-the-Grave'>Beyond the Grave</a></li>
-                                <li><a href='https://bit.ly/MTG-CSP-Kjeldoran-Cunning'>Kjeldoran Cunning</a></li>
-                                <li><a class="missing">Snowscape</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4>Ravnica Block</h4>
-                            <ul class="list">
-                                <li class="category">Ravnica: City of Guilds</li>
-                                <li><a class="missing">Charge of the Boros</a></li>
-                                <li><a class="missing">Dimir Intrigues</a></li>
-                                <li><a href='https://bit.ly/MTG-RAV-Golgari-Deathcreep'>Golgari Deathcreep</a></li>
-                                <li><a class="missing">Selesnya United</a></li>
-
-                                <li class="category">Guildpact</li>
-                                <li><a class="missing">Code of the Orzhov</a></li>
-                                <li><a class="missing">Gruul Wilding</a></li>
-                                <li><a href='https://bit.ly/MTG-GPT-Izzet-Gizmometry'>Izzet Gizmometry</a></li>
-
-                                <li class="category">Dissension</li>
-                                <li><a href='https://bit.ly/MTG-DIS-Azorius-Ascendant'>Azorius Ascendant</a></li>
-                                <li><a href='https://bit.ly/MTG-DIS-Simic-Mutology'>Simic Mutology</a></li>
-                                <li><a href='https://bit.ly/MTG-DIS-Rakdos-Bloodsport'>Rakdos Bloodsport</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Kamigawa Block</h4>
-                            <ul class="list">
-                                <li class="category">Champions of Kamigawa</li>
-                                <li><a class="missing">Kami Reborn</a></li>
-                                <li><a class="missing">Snake's Path</a></li>
-                                <li><a class="missing">Spiritbane</a></li>
-                                <li><a class="missing">Way of the Warrior</a></li>
-
-                                <li class="category">Betrayers of Kamigawa</li>
-                                <li><a class="missing">Dark Devotion</a></li>
-                                <li><a class="missing">Ninjutsu</a></li>
-                                <li><a class="missing">Rats' Nest</a></li>
-                                <li><a class="missing">Spiritcraft</a></li>
-
-                                <li class="category">Saviors of Kamigawa</li>
-                                <li><a class="missing">Critical Mass</a></li>
-                                <li><a class="missing">Soratami's Wisdom</a></li>
-                                <li><a class="missing">Spirit Flames</a></li>
-                                <li><a class="missing">Truth Seekers</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Mirrodin Block</h4>
-                            <ul class="list">
-                                <li class="category">Mirrodin</li>
-                                <li><a class="missing">Bait & Bludgeon</a></li>
-                                <li><a class="missing">Little Bashers</a></li>
-                                <li><a class="missing">Sacrificial Bam</a></li>
-                                <li><a class="missing">Wicked Big</a></li>
-
-                                <li class="category">Darksteel</li>
-                                <li><a class="missing">Master Blaster</a></li>
-                                <li><a class="missing">Mind Swarm</a></li>
-                                <li><a class="missing">Swarm & Slam</a></li>
-                                <li><a class="missing">Transference</a></li>
-
-                                <li class="category">Fifth Dawn</li>
-                                <li><a class="missing">Nuts and Bolts</a></li>
-                                <li><a class="missing">Special Forces</a></li>
-                                <li><a class="missing">Stampede</a></li>
-                                <li><a class="missing">Sunburst</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4>Onslaught Block</h4>
-                            <ul class="list">
-                                <li class="category">Onslaught</li>
-                                <li><a class="missing">Bait and Switch</a></li>
-                                <li><a class="missing">Celestial Assault</a></li>
-                                <li><a class="missing">Devastation</a></li>
-                                <li><a class="missing">Ivory Doom</a></li>
-
-                                <li class="category">Legions</li>
-                                <li><a class="missing">Elvish Rage</a></li>
-                                <li><a class="missing">Morph Mayhem</a></li>
-                                <li><a class="missing">Sliver Shivers</a></li>
-                                <li><a class="missing">Zombies Unleashed</a></li>
-
-                                <li class="category">Scourge</li>
-                                <li><a href='https://bit.ly/MTG-SCG-Goblin-Mob'>Goblin Mob</a></li>
-                                <li><a class="missing">Max Attax</a></li>
-                                <li><a class="missing">Pulverize</a></li>
-                                <li><a class="missing">Storm Surge</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4>Odyssey Block</h4>
-                            <ul class="list">
-                                <li class="category">Odyssey</li>
-                                <li><a href='https://bit.ly/MTG-ODY-Liftoff'>Liftoff</a></li>
-                                <li><a href='https://bit.ly/MTG-ODY-One-Two-Punch'>One-Two Punch</a></li>
-                                <li><a href='https://bit.ly/MTG-ODY-Pressure-Cooker'>Pressure Cooker</a></li>
-                                <li><a href='https://bit.ly/MTG-ODY-Trounce-O-Matic'>Trounce-O-Matic</a></li>
-
-                                <li class="category">Torment</li>
-                                <li><a href='https://bit.ly/MTG-TOR-Sacrilege'>Sacrilege</a></li>
-                                <li><a href='https://bit.ly/MTG-TOR-Grave-Danger'>Grave Danger</a></li>
-                                <li><a href='https://bit.ly/MTG-TOR-Waking-Nightmares'>Waking Nightmares</a></li>
-                                <li><a href='https://bit.ly/MTG-TOR-Insanity'>Insanity</a></li>
-
-                                <li class="category">Judgment</li>
-                                <li><a class="missing">Air Razers</a></li>
-                                <li><a href='https://bit.ly/MTG-JUD-Inundation'>Inundation</a></li>
-                                <li><a class="missing">Painflow</a></li>
-                                <li><a class="missing">Spectral Slam</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4>Invasion Block</h4>
-                            <ul class="list">
-                                <li class="category">Invasion</li>
-                                <li><a class="missing">Blowout</a></li>
-                                <li><a class="missing">Dismissal</a></li>
-                                <li><a class="missing">Heavy Duty</a></li>
-                                <li><a class="missing">Spectrum</a></li>
-
-                                <li class="category">Planeshift</li>
-                                <li><a class="missing">Barrage</a></li>
-                                <li><a class="missing">Comeback</a></li>
-                                <li><a href='https://bit.ly/MTG-PLS-Domain'>Domain</a></li>
-                                <li><a class="missing">Scout</a></li>
-
-                                <li class="category">Apocalypse</li>
-                                <li><a class="missing">Burial</a></li>
-                                <li><a class="missing">Pandemonium</a></li>
-                                <li><a class="missing">Swoop</a></li>
-                                <li><a class="missing">Whirlpool</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Masques Block</h4>
-                            <ul class="list">
-                                <li class="category">Mercadian Masques</li>
-                                <li><a class="missing">Deepwood Menace</a></li>
-                                <li><a class="missing">Disruptor</a></li>
-                                <li><a class="missing">Rebel's Call</a></li>
-                                <li><a class="missing">Tidal Mastery</a></li>
-
-                                <li class="category">Nemesis</li>
-                                <li><a class="missing">Breakdown</a></li>
-                                <li><a class="missing">Eruption</a></li>
-                                <li><a class="missing">Mercenaries</a></li>
-                                <li><a class="missing">Replicator</a></li>
-
-                                <li class="category">Prophecy</li>
-                                <li><a class="missing">Distress</a></li>
-                                <li><a class="missing">Pummel</a></li>
-                                <li><a class="missing">Slither</a></li>
-                                <li><a class="missing">Turnaround</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Urza's Block</h4>
-                            <ul class="list">
-                                <li class="category">Urza's Saga</li>
-                                <li><a class="missing">The Plague</a></li>
-                                <li><a class="missing">Sleeper</a></li>
-                                <li><a class="missing">Special Delivery</a></li>
-                                <li><a class="missing">Tombstone</a></li>
-
-                                <li class="category">Urza's Legacy</li>
-                                <li><a class="missing">Crusher</a></li>
-                                <li><a class="missing">Phyrexian Assault</a></li>
-                                <li><a class="missing">Radiant's Revenge</a></li>
-                                <li><a class="missing">Time Drain</a></li>
-
-                                <li class="category">Urza's Destiny</li>
-                                <li><a class="missing">Assassin</a></li>
-                                <li><a class="missing">Battle Surge</a></li>
-                                <li><a class="missing">Enchanter</a></li>
-                                <li><a class="missing">Fiendish Nature</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4>Tempest Block</h4>
-                            <ul class="list">
-                                <li class="category">Tempest</li>
-                                <li><a class="missing">Deep Freeze</a></li>
-                                <li><a class="missing">The Flames of Rath</a></li>
-                                <li><a class="missing">The Slivers</a></li>
-                                <li><a class="missing">The Swarm</a></li>
-
-                                <li class="category">Stronghold</li>
-                                <li><a class="missing">Call of the Kor</a></li>
-                                <li><a class="missing">Migraine</a></li>
-                                <li><a href='https://bit.ly/MTG-STH-The-Sparkler'>The Sparkler</a></li>
-                                <li><a class="missing">The Spikes</a></li>
-
-                                <li class="category">Exodus</li>
-                                <li><a href='https://bit.ly/MTG-EXO-Dominator'>Dominator</a></li>
-                                <li><a class="missing">Groundbreaker</a></li>
-                                <li><a class="missing">White Heat</a></li>
-                                <li><a class="missing">Widowmaker</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Core Sets</h4>
-                            <ul class="list">
-                                <li class="category">10th Edition</li>
-                                <li><a class="missing">Cho-Manno's Resolve</a></li>
-                                <li><a class="missing">Arcanis's Guile</a></li>
-                                <li><a class="missing">Evincar's Tyranny</a></li>
-                                <li><a class="missing">Kamahl's Temper</a></li>
-                                <li><a class="missing">Molimo's Might</a></li>
-
-                                <li class="category">9th Edition</li>
-                                <li><a class="missing">Army of Justice</a></li>
-                                <li><a class="missing">Lofty Heights</a></li>
-                                <li><a class="missing">Dead Again</a></li>
-                                <li><a class="missing">World Aflame</a></li>
-                                <li><a class="missing">Custom Creatures</a></li>
-
-                                <li class="category">8th Edition</li>
-                                <li><a class="missing">Life Boost</a></li>
-                                <li><a class="missing">Sky Slam</a></li>
-                                <li><a class="missing">Expulsion</a></li>
-                                <li><a class="missing">Speed Scorch</a></li>
-                                <li><a class="missing">Heavy Hitters</a></li>
-
-                                <li class="category">7th Edition</li>
-                                <li><a class="missing">Armada</a></li>
-                                <li><a class="missing">Bomber</a></li>
-                                <li><a class="missing">Decay</a></li>
-                                <li><a class="missing">Infestation</a></li>
-                                <li><a class="missing">Way Wild</a></li>
-                            </ul>
-                        </div>
-                        <div class="group">
-                            <h4 class="disabled">Starter Sets</h4>
-                            <ul class="list">
-                                <li class="category">Starter 1999</li>
-                                <li><a class="missing">Blinding Fury</a></li>
-                                <li><a class="missing">Time Curse</a></li>
-                                <li><a class="missing">Deadly Instinct</a></li>
-                                <li><a class="missing">Goblin Assault</a></li>
-                                <li><a class="missing">Impaler</a></li>
-
-                                <li class="category">Portal Three Kingdoms</li>
-                                <li><a class="missing">Shu Kingdom</a></li>
-                                <li><a class="missing">Wu Kingdom</a></li>
-                                <li><a class="missing">Wei Kingdom</a></li>
-
-                                <li class="category">Portal Second Age</li>
-                                <li><a class="missing">Martial Law</a></li>
-                                <li><a class="missing">Spellweaver</a></li>
-                                <li><a class="missing">Night Stalkers</a></li>
-                                <li><a class="missing">Goblin Fire</a></li>
-                                <li><a class="missing">Nature's Assault</a></li>
-                            </ul>
-                        </div>
+                    <div class='list_wrap'>
+                        <h3 data-count='4'>Commander 2019</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-C19-All-Decks'>ALL 4 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-C19-Faceless-Menace'>Faceless Menace</a></li>
+                            <li><a href='https://bit.ly/MTG-C19-Merciless-Rage'>Merciless Rage</a></li>
+                            <li><a href='https://bit.ly/MTG-C19-Mystic-Intellect'>Mystic Intellect</a></li>
+                            <li><a href='https://bit.ly/MTG-C19-Primal-Genesis'>Primal Genesis</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="group level2" id='starter'>
-                    <h3><span class='count' data-count=' (2)'>Two-Player Starter Sets</span></h3>
-                    <ul class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-Starter'>download all</a>
-                        </span>
-                        <li class="category">Spellslinger Kits</li>
-                        <li><a href='https://bit.ly/MTG-M20-Spellslinger'>Spellslinger Starter Kit</a><span class='set'>(M20)</span></li>
-                        <li><a href='https://bit.ly/MTG-Spellslinger-Starter'>Spellslinger Starter Kit</a></li>
 
-                        <li class="category">Core Sets</li>
-                        <li><a class="missing">9th Edition Core Game</a></li>
-                        <li><a class="missing">8th Edition Core Game</a></li>
-                        <li><a class="missing">7th Edition set</a></li>
-                        <li><a class="missing">6th Edition set</a></li>
-                        <li><a class="missing">5th Edition set</a></li>
+                    <div class='list_wrap'>
+                        <h3 data-count='4'>Commander 2018</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-C18-All-Decks'>ALL 4 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-C18-Adaptive-Enchantment'>Adaptive Enchantment</a></li>
+                            <li><a href='https://bit.ly/MTG-C18-Exquisite-Invention'>Exquisite Invention</a></li>
+                            <li><a href='https://bit.ly/MTG-C18-Natures-Vengeance'>Nature's Vengeance</a></li>
+                            <li><a href='https://bit.ly/MTG-C18-Subjective-Reality'>Subjective Reality</a></li>
+                        </ul>
+                    </div>
 
-                        <li class="category">Starter Editions</li>
-                        <li><a class="missing">Starter 2000 Game Box</a></li>
-                        <li><a class="missing">Starter 1999 Game Box</a></li>
+                    <div class='list_wrap'>
+                        <h3 data-count='4'>Commander Anthology II</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-CMD-Anth2-Box-Set'>FULL BOX SET</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-CMD-Anth2-Devour-for-Power'>Devour for Power</a></li>
+                            <li><a href='https://bit.ly/MTG-CMD-Anth2-Built-from-Scratch'>Built from Scratch</a></li>
+                            <li><a href='https://bit.ly/MTG-CMD-Anth2-Wade-into-Battle'>Wade into Battle</a></li>
+                            <li><a href='https://bit.ly/MTG-CMD-Anth2-Breed-Lethality'>Breed Lethality</a></li>
+                        </ul>
+                    </div>
 
-                        <li class="category">Portal Editions</li>
-                        <li><a class="missing">Portal Three Kingdoms set</a></li>
-                        <li><a class="missing">Portal Second Age set</a></li>
-                        <li><a class="missing">Portal set</a></li>
+                    <div class='list_wrap'>
+                        <h3 data-count='4'>Commander 2017</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-C17-All-Decks'>ALL 4 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-C17-Draconic-Domination'>Draconic Domination</a></li>
+                            <li><a href='https://bit.ly/MTG-C17-Feline-Ferocity'>Feline Ferocity</a></li>
+                            <li><a href='https://bit.ly/MTG-C17-Vampiric-Bloodlust'>Vampiric Bloodlust</a></li>
+                            <li><a href='https://bit.ly/MTG-C17-Arcane-Wizardry'>Arcane Wizardry</a></li>
+                        </ul>
+                    </div>
 
-                        <li class="category">Early Products</li>
-                        <li><a class='missing'>Introductory Two-Player Set</a></li>
-                        <li><a class='missing'>Rivals Quick Start Set</a></li>
-                    </ul>
-                </div>
-                <div class="group level2" id='welcome'>
-                    <h3><span class='count' data-count=' (5)'>Sample / Welcome Decks</span></h3>
-                    <div class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-Sample-n-Welcome'>download all</a>
-                        </span>
-                        <div class='group'>
-                            <h4>Core Set 2020</h4>
-                            <ul class="list">
-                                <li><a href='https://bit.ly/MTG-M20-Welcome-All'>ALL 5 DECKS</a></li>
-                                <br />
-                                <li><a href='https://bit.ly/MTG-M20-Welcome-White'>White</a></li>
-                                <li><a href='https://bit.ly/MTG-M20-Welcome-Blue'>Blue</a></li>
-                                <li><a href='https://bit.ly/MTG-M20-Welcome-Black'>Black</a></li>
-                                <li><a href='https://bit.ly/MTG-M20-Welcome-Red'>Red</a></li>
-                                <li><a href='https://bit.ly/MTG-M20-Welcome-Green'>Green</a></li>
-                            </ul>
-                        </div>
+                    <div class='list_wrap'>
+                        <h3 data-count='4'>Commander Anthology</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-CMD-Anth-Box-Set'>FULL BOX SET</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-CMD-Anth-Heavenly-Inferno'>Heavenly Inferno</a></li>
+                            <li><a href='https://bit.ly/MTG-CMD-Anth-Evasive-Maneuvers'>Evasive Maneuvers</a></li>
+                            <li><a href='https://bit.ly/MTG-CMD-Anth-Guided-by-Nature'>Guided by Nature</a></li>
+                            <li><a href='https://bit.ly/MTG-CMD-Anth-Plunder-the-Graves'>Plunder the Graves</a></li>
+                        </ul>
+                    </div>
 
-                        <div class='group'>
-                            <h4 class="disabled">Core Set 2019</h4>
-                            <ul class="list">
-                                <li><a class='missing'>ALL 5 DECKS</a></li>
-                                <br />
-                                <li><a class='missing'>White</a></li>
-                                <li><a class='missing'>Blue</a></li>
-                                <li><a class='missing'>Black</a></li>
-                                <li><a class='missing'>Red</a></li>
-                                <li><a class='missing'>Green</a></li>
-                            </ul>
-                        </div>
+                    <div class='list_wrap'>
+                        <h3 data-count='5'>Commander 2016</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-C16-All-Decks'>ALL 5 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-C16-Entropic-Uprising'>Entropic Uprising</a></li>
+                            <li><a href='https://bit.ly/MTG-C16-Open-Hostility'>Open Hostility</a></li>
+                            <li><a href='https://bit.ly/MTG-C16-Stalwart-Unity'>Stalwart Unity</a></li>
+                            <li><a href='https://bit.ly/MTG-C16-Breed-Lethality'>Breed Lethality</a></li>
+                            <li><a href='https://bit.ly/MTG-C16-Invent-Superiority'>Invent Superiority</a></li>
+                        </ul>
+                    </div>
 
-                        <div class='group'>
-                            <h4 class="disabled">Welcome Deck 2017</h4>
-                            <ul class="list">
-                                <li><a class='missing'>ALL 5 DECKS</a></li>
-                                <br />
-                                <li><a class='missing'>White</a></li>
-                                <li><a class='missing'>Blue</a></li>
-                                <li><a class='missing'>Black</a></li>
-                                <li><a class='missing'>Red</a></li>
-                                <li><a class='missing'>Green</a></li>
-                            </ul>
-                        </div>
+                    <div class='list_wrap'>
+                        <h3 data-count='5'>Commander 2015</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-C15-All-Decks'>ALL 5 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-C15-Call-the-Spirits'>Call the Spirits</a></li>
+                            <li><a href='https://bit.ly/MTG-C15-Plunder-the-Graves'>Plunder the Graves</a></li>
+                            <li><a href='https://bit.ly/MTG-C15-Seize-Control'>Seize Control</a></li>
+                            <li><a href='https://bit.ly/MTG-C15-Swell-the-Host'>Swell the Host</a></li>
+                            <li><a href='https://bit.ly/MTG-C15-Wade-into-Battle'>Wade into Battle</a></li>
+                        </ul>
+                    </div>
 
-                        <div class='group'>
-                            <h4 class="disabled">Welcome Deck 2016</h4>
-                            <ul class="list">
-                                <li><a class='missing'>ALL 5 DECKS</a></li>
-                                <br />
-                                <li><a class='missing'>White</a></li>
-                                <li><a class='missing'>Blue</a></li>
-                                <li><a class='missing'>Black</a></li>
-                                <li><a class='missing'>Red</a></li>
-                                <li><a class='missing'>Green</a></li>
-                            </ul>
-                        </div>
+                    <div class='list_wrap'>
+                        <h3 data-count='5'>Commander 2014</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-C14-All-Decks'>ALL 5 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-C14-Forged-in-Stone'>Forged in Stone</a></li>
+                            <li><a href='https://bit.ly/MTG-C14-Peer-Through-Time'>Peer Through Time</a></li>
+                            <li><a href='https://bit.ly/MTG-C14-Sworn-to-Darkness'>Sworn to Darkness</a></li>
+                            <li><a href='https://bit.ly/MTG-C14-Built-from-Scratch'>Built from Scratch</a></li>
+                            <li><a href='https://bit.ly/MTG-C14-Guided-by-Nature'>Guided by Nature</a></li>
+                        </ul>
+                    </div>
 
-                        <div class='group'>
-                            <h4 class="disabled">Magic Origins</h4>
-                            <ul class="list">
-                                <li><a class='missing'>ALL 5 DECKS</a></li>
-                                <br />
-                                <li><a class='missing'>White</a></li>
-                                <li><a class='missing'>Blue</a></li>
-                                <li><a class='missing'>Black</a></li>
-                                <li><a class='missing'>Red</a></li>
-                                <li><a class='missing'>Green</a></li>
-                            </ul>
-                        </div>
+                    <div class='list_wrap'>
+                        <h3 data-count='5'>Commander 2013</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-C13-All-Decks'>ALL 5 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-C13-Evasive-Maneuvers'>Evasive Maneuvers</a></li>
+                            <li><a href='https://bit.ly/MTG-C13-Eternal-Bargain'>Eternal Bargain</a></li>
+                            <li><a href='https://bit.ly/MTG-C13-Mind-Seize'>Mind Seize</a></li>
+                            <li><a href='https://bit.ly/MTG-C13-Power-Hungry'>Power Hungry</a></li>
+                            <li><a href='https://bit.ly/MTG-C13-Nature-of-the-Beast'>Nature of the Beast</a></li>
+                        </ul>
+                    </div>
 
-                        <div class='group'>
-                            <h4 class="disabled">Magic 2015</h4>
-                            <ul class="list">
-                                <li><a class='missing'>ALL 5 DECKS</a></li>
-                                <br />
-                                <li><a class='missing'>White</a></li>
-                                <li><a class='missing'>Blue</a></li>
-                                <li><a class='missing'>Black</a></li>
-                                <li><a class='missing'>Red</a></li>
-                                <li><a class='missing'>Green</a></li>
-                            </ul>
-                        </div>
+                    <div class='list_wrap'>
+                        <h3  data-count='5'>Commander (2011)</h3>
+                        <ul class="list">
+                            <li><a href='https://bit.ly/MTG-CMD-All-Decks'>ALL 5 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-CMD-Heavenly-Inferno'>Heavenly Inferno</a></li>
+                            <li><a href='https://bit.ly/MTG-CMD-Mirror-Mastery'>Mirror Mastery</a></li>
+                            <li><a href='https://bit.ly/MTG-CMD-Counterpunch'>Counterpunch</a></li>
+                            <li><a href='https://bit.ly/MTG-CMD-Political-Puppets'>Political Puppets</a></li>
+                            <li><a href='https://bit.ly/MTG-CMD-Devour-for-Power'>Devour for Power</a></li>
+                        </ul>
+                    </div>
 
-                        <div class='group'>
-                            <h4 class="disabled">Magic 2014</h4>
-                            <ul class="list">
-                                <li><a class='missing'>ALL 5 DECKS</a></li>
-                                <br />
-                                <li><a class='missing'>White</a></li>
-                                <li><a class='missing'>Blue</a></li>
-                                <li><a class='missing'>Black</a></li>
-                                <li><a class='missing'>Red</a></li>
-                                <li><a class='missing'>Green</a></li>
-                            </ul>
-                        </div>
+                </div> <!-- Commander -->
 
-                        <div class='group'>
-                            <h4 class="disabled">Magic 2013</h4>
-                            <ul class="list">
-                                <li><a class='missing'>ALL 5 DECKS</a></li>
-                                <br />
-                                <li><a class='missing'>White</a></li>
-                                <li><a class='missing'>Blue</a></li>
-                                <li><a class='missing'>Black</a></li>
-                                <li><a class='missing'>Red</a></li>
-                                <li><a class='missing'>Green</a></li>
-                            </ul>
-                        </div>
+            </div> <!-- Commander wrap -->
 
-                        <div class='group'>
-                            <h4 class="disabled">Magic 2012</h4>
-                            <ul class="list">
-                                <li><a class='missing'>ALL 10 DECKS</a></li>
-                                <br />
-                                <li><a class='missing'>White (A)</a><a class='missing'>White (B)</a></li>
-                                <li><a class='missing'>Blue (A)</a><a class='missing'>Blue (B)</a></li>
-                                <li><a class='missing'>Black (A)</a><a class='missing'>Black (B)</a></li>
-                                <li><a class='missing'>Red (A)</a><a class='missing'>Red (B)</a></li>
-                                <li><a class='missing'>Green (A)</a><a class='missing'>Green (B)</a></li>
-                            </ul>
-                        </div>
+            <div class='list_wrap list_group' id='series'>
 
-                        <div class='group'>
-                            <h4 class="disabled">Magic 2011</h4>
-                            <ul class="list">
-                                <li><a class='missing'>ALL 10 DECKS</a></li>
-                                <br />
-                                <li><a class='missing'>White (A)</a><a class='missing'>White (B)</a></li>
-                                <li><a class='missing'>Blue (A)</a><a class='missing'>Blue (B)</a></li>
-                                <li><a class='missing'>Black (A)</a><a class='missing'>Black (B)</a></li>
-                                <li><a class='missing'>Red (A)</a><a class='missing'>Red (B)</a></li>
-                                <li><a class='missing'>Green (A)</a><a class='missing'>Green (B)</a></li>
-                            </ul>
-                        </div>
+                <h2>Other Series</h2>
+                <div class="list">
 
-                        <div class='group'>
-                            <h4 class="disabled">Tenth Edition</h4>
-                            <ul class="list">
-                                <li><a class='missing'>ALL 10 DECKS</a></li>
-                                <br />
-                                <li><a class='missing'>White (A)</a><a class='missing'>White (B)</a></li>
-                                <li><a class='missing'>Blue (A)</a><a class='missing'>Blue (B)</a></li>
-                                <li><a class='missing'>Black (A)</a><a class='missing'>Black (B)</a></li>
-                                <li><a class='missing'>Red (A)</a><a class='missing'>Red (B)</a></li>
-                                <li><a class='missing'>Green (A)</a><a class='missing'>Green (B)</a></li>
-                            </ul>
-                        </div>
+                    <div class='list_wrap' id='archenemy'>
+
+                        <h3 data-count='4 + 1 box set'>Archenemy</h3>
+                        <ul class="list">
+
+                            <h4 class="category">Archenemy: Nicol Bolas</h4>
+                            <li><a href='https://bit.ly/MTG-Archenemy2-Box-Set'>FULL BOX SET<span class="note">+ schemes &amp; tokens</span></a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-Archenemy2-Nicol-Bolas'>Nicol Bolas<span class="note">+ 20 schemes</span></a></li>
+                            <li><a href='https://bit.ly/MTG-Archenemy2-Gideon-Jura'>Gideon Jura</a></li>
+                            <li><a href='https://bit.ly/MTG-Archenemy2-Chandra-Nalaar'>Chandra Nalaar</a></li>
+                            <li><a href='https://bit.ly/MTG-Archenemy2-Nissa-Revane'>Nissa Revane</a></li>
+
+                            <h4 class="category">Archenemy (2010)</h4>
+                            <p class="includes">
+                                one deck and accompanying scheme cards
+                            </p>
+                            <li><a href='https://bit.ly/MTG-Archenemy-All-Decks'>ALL 4 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-Archenemy-Bring-About' style="overflow:hidden;white-space:nowrap">Bring About the Undead Apocalypse</a></li>
+                            <li><a href='https://bit.ly/MTG-Archenemy-Assemble' style="overflow:hidden;white-space:nowrap">Assemble the Doomsday Machine</a></li>
+                            <li><a href='https://bit.ly/MTG-Archenemy-Trample' style="overflow:hidden;white-space:nowrap">Trample Civilization Underfoot</a></li>
+                            <li><a href='https://bit.ly/MTG-Archenemy-Scorch' style="overflow:hidden;white-space:nowrap">Scorch the World with Dragonfire</a></li>
+
+                        </ul> <!-- Archenemy -->
+
+                    </div> <!-- Archenemy wrap -->
+
+                    <div class='list_wrap' id='planechase'>
+
+                        <h3 data-count='8 + 1 box set'>Planechase</h3>
+                        <ul class="list">
+
+                            <h4 class="category">Planechase Anthology</h4>
+                            <li><a href='https://bit.ly/MTG-Planechase-Anth-Box-Set'>FULL BOX SET<span class='note'>incl. 35 tokens</span></a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-Planechase-Anth-Chaos'>Chaos Reigns</a></li>
+                            <li><a href='https://bit.ly/MTG-Planechase-Anth-Night'>Night of the Ninja</a></li>
+                            <li><a href='https://bit.ly/MTG-Planechase-Anth-Primordial'>Primordial Hunger</a></li>
+                            <li><a href='https://bit.ly/MTG-Planechase-Anth-Savage'>Savage Auras</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-Planechase-Anth-Planes'>Planes / Phenomena</a></li>
+
+                            <h4 class="category">Planechase 2012</h4>
+                            <p class="includes">
+                                one deck and accompanying plane&nbsp;/ phenomenon cards 
+                            </p>
+                            <li><a href='https://bit.ly/MTG-Planechase-2012-All-Decks'>ALL 4 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-Planechase-2012-Chaos'>Chaos Reigns</a></li>
+                            <li><a href='https://bit.ly/MTG-Planechase-2012-Night'>Night of the Ninja</a></li>
+                            <li><a href='https://bit.ly/MTG-Planechase-2012-Primordial'>Primordial Hunger</a></li>
+                            <li><a href='https://bit.ly/MTG-Planechase-2012-Savage'>Savage Auras</a></li>
+
+                            <h4 class="category">Planechase (2009)</h4>
+                            <p class="includes">
+                                one deck and accompanying plane&nbsp;/ phenomenon cards 
+                            </p>
+                            <li><a href='https://bit.ly/MTG-Planechase-2009-All-Decks'>ALL 4 DECKS</a></li>
+                            <br />
+                            <li><a href='https://bit.ly/MTG-Planechase-2009-Elemental'>Elemental Thunder</a></li>
+                            <li><a href='https://bit.ly/MTG-Planechase-2009-Metallic'>Metallic Dreams</a></li>
+                            <li><a href='https://bit.ly/MTG-Planechase-2009-Strike'>Strike Force</a></li>
+                            <li><a href='https://bit.ly/MTG-Planechase-2009-Zombie'>Zombie Empire</a></li>
+
+                        </ul> <!-- Planechase -->
+
+                    </div> <!-- Planechase wrap -->
+
+                    <div class='list_wrap' id='duel'>
+
+                        <h3 class="discontinued" data-count='23'>Duel Decks</h3>
+                        <ul class="list">
+
+                            <li><a href='https://bit.ly/MTG-Duel-Decks-Anthology'>Duel Decks Anthology</a></li>
+                            <p class="includes">
+                                both decks and accompanying tokens
+                            </p>
+                            <li><a href='https://bit.ly/MTG-Global-Jiang-and-Mu'>Jiang Yanggu vs. Mu Yanling</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Elves-v-Inventors'>Elves vs. Inventors</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Merfolk-v-Goblins'>Merfolk vs. Goblins</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Mind-v-Might'>Mind vs. Might</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Nissa-v-Ob-Nixilis'>Nissa vs. Ob Nixilis</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Blessed-v-Cursed'>Blessed vs. Cursed</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Zendikar-v-Eldrazi'>Zendikar vs. Eldrazi</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Elspeth-v-Kiora'>Elspeth vs. Kiora</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Speed-v-Cunning'>Speed vs. Cunning</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Jace-v-Vraska'>Jace vs. Vraska</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Heroes-v-Monsters'>Heroes vs. Monsters</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Sorin-v-Tibalt'>Sorin vs. Tibalt</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Izzet-v-Golgari'>Izzet vs. Golgari</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Venser-v-Koth'>Venser vs. Koth</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Ajani-v-Nicol-Bolas'>Ajani vs. Nicol Bolas</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Knights-v-Dragons'>Knights vs. Dragons</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Elspeth-v-Tezzeret'>Elspeth vs. Tezzeret</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Phyrexia-v-Coalition'>Phyrexia vs. The Coalition</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Garruk-v-Liliana'>Garruk vs. Liliana</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Divine-v-Demonic'>Divine vs. Demonic</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Jace-v-Chandra' class="unverified">Jace vs. Chandra</a></li>
+                            <li><a href='https://bit.ly/MTG-Duel-Elves-v-Goblins' class="unverified">Elves vs. Goblins</a></li>
+
+                        </ul> <!-- Duel Decks -->
+
+                    </div> <!-- Duel Deck wrap -->
+
+                    <div class='list_wrap' id='pds'>
+
+                        <h3 class="discontinued" data-count='3'>Premium Decks</h3>
+                        <ul class="list">
+
+                            <li><a href='https://bit.ly/MTG-PDS-Graveborn'>Graveborn</a></li>
+                            <li><a href='https://bit.ly/MTG-PDS-Fire-and-Lightning'>Fire and Lightning</a></li>
+                            <li><a href='https://bit.ly/MTG-PDS-Slivers'>Slivers</a></li>
+
+                        </ul>
+
+                    </div> <!-- PDS wrap -->
+
+                </div> <!-- Other Series -->
+
+            </div> <!-- Other Series wrap -->
+
+            <div class='list_wrap list_group' id='other'>
+
+                <h2>Misc. Precons</h2>
+                <div class="list">
+
+                    <div class='list_wrap' id='unsanctioned'>
+
+                        <h3 data-count='1 box set'>Unsanctioned</h3>
+                        <ul class="list">
+                            <li><a href="https://bit.ly/MTG-Unsanctioned">Unsanctioned Box Set</a></li>
+                        </ul>
 
                     </div>
-                </div>
-                <div class="group level2" id='toolkits'>
-                    <h3><span class='count' data-count=' (4)'>Deck Builder's Toolkits</span></h3>
-                    <ul class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-Toolkits'>download all</a>
-                        </span>
-                        <li><a href='https://bit.ly/MTG-THB-Toolkit'>Theros Beyond Death</a></li>
-                        <li><a href='https://bit.ly/MTG-M20-Toolkit'>Core Set 2020</a></li>
-                        <li><a href='https://bit.ly/MTG-RNA-Toolkit'>Ravnica Allegiance</a></li>
-                        <li><a href='https://bit.ly/MTG-M19-Toolkit'>Core Set 2019</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-    </section><section id="col2">
+                    <div class='list_wrap' id='brawl'>
 
-        <div class='group level1' id='standard'>
-            <h2>Standard On-Ramp</h2>
-            <div class="list">
-                <div class="group level2" id="challenger">
-                    <h3><span class='count' data-count=' (14)'>Challenger Decks</span></h3>
-                    <ul class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-Challenger'>download all</a>
-                        </span>
-                        <p class="includes">
-                            60 card deck, 15 card sideboard, and accompanying tokens (2020 and later)
-                        </p>
-                        <li><a href="https://bit.ly/MTG-Challenger2020-All">ALL 4 DECKS</a><span class="set">2020</span></li>
-                        <li><a href="https://bit.ly/MTG-Allied-Fires">Allied Fires</a><span class="set">2020</span></li>
-                        <li><a href="https://bit.ly/MTG-Cavalcade-Charge">Cavalcade Charge</a><span class="set">2020</span></li>
-                        <li><a href="https://bit.ly/MTG-Final-Adventure">Final Adventure</a><span class="set">2020</span></li>
-                        <li><a href="https://bit.ly/MTG-Flash-of-Ferocity">Flash of Ferocity</a><span class="set">2020</span></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-Challenger2019-All">ALL 4 DECKS</a><span class="set">2020</span></li>
-                        <li><a href="https://bit.ly/MTG-United-Assault">United Assault</a><span class="set">2019</span></li>
-                        <li><a href="https://bit.ly/MTG-Lightning-Aggro">Lightning Aggro</a><span class="set">2019</span></li>
-                        <li><a href="https://bit.ly/MTG-Deadly-Discovery">Deadly Discovery</a><span class="set">2019</span></li>
-                        <li><a href="https://bit.ly/MTG-Arcane-Tempo">Arcane Tempo</a><span class="set">2019</span></li>
-                        <br />
-                        <li><span class="note">Japan exclusives:</span></li>
-                        <li><a href="https://bit.ly/MTG-Challenger-Awakening-Earth">Awakening Earth<img src="https://deckbox.org/images/icon_spacer_16_11.png" class="flag flag-jp" /></a><span class="set">2019</span></li>
-                        <li><a href="https://bit.ly/MTG-Challenger-Song-Dance">Song Dance<img src="https://deckbox.org/images/icon_spacer_16_11.png" class="flag flag-jp" /></a><span class="set">2019</span></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-Challenger2018-All">ALL 4 DECKS</a><span class="set">2020</span></li>
-                        <li><a href="https://bit.ly/MTG-Hazoret-Aggro">Hazoret Aggro</a><span class="set">2018</span></li>
-                        <li><a href="https://bit.ly/MTG-Vehicle-Rush">Vehicle Rush</a><span class="set">2018</span></li>
-                        <li><a href="https://bit.ly/MTG-Second-Sun-Control">Second Sun Control</a><span class="set">2018</span></li>
-                        <li><a href="https://bit.ly/MTG-Counter-Surge">Counter Surge</a><span class="set">2018</span></li>
-                    </ul>
-                </div>
-                <div class="group level2" id="clash">
-                    <h3 class="discontinued"><span class='count' data-count=' (3)'>Clash Packs</span></h3>
-                    <ul class="list">
-                        <span class="small">
-                            <a href="https://bit.ly/MTG-All-Clash-Packs">download all</a>
-                        </span>
-                        <p class="includes">
-                            both 60 card decks
-                        </p>
-                        <li><a href="https://bit.ly/MTG-ORI-Clash">Armed &amp; Dangerous</a><span class="set">(ORI)</span></li>
-                        <li><a href="https://bit.ly/MTG-FRF-Clash">Power &amp; Profit</a><span class="set">(FRF)</span></li>
-                        <li><a href="https://bit.ly/MTG-M15-Clash">Fate &amp; Fury</a><span class="set">(M15)</span></li>
-                    </ul>
-                </div>
-                <div class="group level2" id="event">
-                    <h3 class="discontinued"><span class='count' data-count=' (26)'>Event Decks</span></h3>
-                    <ul class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-Event'>download all</a>
-                        </span>
-                        <p class="includes">
-                            60 card deck and 15 card sideboard
-                        </p>
-                        <li><a href='https://bit.ly/MTG-BFZ-Ultimate-Sacrifice'>Ultimate Sacrifice</a><span class="set">(BFZ)</span></li>
-                        <li><a href='https://bit.ly/MTG-DTK-Landslide-Charge'>Landslide Charge</a><span class="set">(DTK)</span></li>
-                        <li><a href='https://bit.ly/MTG-KTK-Conquering-Hordes'>Conquering Hordes</a><span class="set">(KTK)</span></li>
-                        <li><a href='https://bit.ly/MTG-JOU-Wrath-of-Mortals'>Wrath of the Mortals</a><span class="set">(JOU)</span></li>
-                        <li><a href='https://bit.ly/MTG-BNG-Underworld-Herald'>Underworld Herald</a><span class="set">(BNG)</span></li>
-                        <li><a href='https://bit.ly/MTG-THS-Inspiring-Heroics'>Inspiring Heroics</a><span class="set">(THS)</span></li>
-                        <li><a href='https://bit.ly/MTG-M14-Rush-of-the-Wild'>Rush of the Wild</a><span class="set">(M14)</span></li>
-                        <li><a href='https://bit.ly/MTG-DGM-Strength-of-Selesnya'>Strength of Selesnya</a><span class="set">(DGM)</span></li>
-                        <li><a href='https://bit.ly/MTG-GTC-Rally-and-Rout'>Rally &amp; Rout</a><span class="set">(GTC)</span></li>
-                        <li><a href='https://bit.ly/MTG-GTC-Thrive-and-Thrash'>Thrive &amp; Thrash</a><span class="set">(GTC)</span></li>
-                        <li><a href='https://bit.ly/MTG-RTR-Creep-and-Conquer'>Creep &amp; Conquer</a><span class="set">(RTR)</span></li>
-                        <li><a href='https://bit.ly/MTG-RTR-Wrack-and-Rage'>Wrack &amp; Rage</a><span class="set">(RTR)</span></li>
-                        <li><a href='https://bit.ly/MTG-M13-Sweet-Revenge'>Sweet Revenge</a><span class="set">(M13)</span></li>
-                        <li><a href='https://bit.ly/MTG-M13-Repeat-Performance'>Repeat Performance</a><span class="set">(M13)</span></li>
-                        <li><a href='https://bit.ly/MTG-AVR-Humanitys-Vengeance'>Humanity's Vengeance</a><span class="set">(AVR)</span></li>
-                        <li><a href='https://bit.ly/MTG-AVR-Deaths-Encroach'>Death's Encroach</a><span class="set">(AVR)</span></li>
-                        <li><a href='https://bit.ly/MTG-DKA-Gleeful-Flames' class="unverified">Gleeful Flames</a><span class="set">(DKA)</span></li>
-                        <li><a href='https://bit.ly/MTG-DKA-Spiraling-Doom'>Spiraling Doom</a><span class="set">(DKA)</span></li>
-                        <li><a href='https://bit.ly/MTG-ISD-Hold-the-Line' class="unverified">Hold the Line</a><span class="set">(ISD)</span></li>
-                        <li><a href='https://bit.ly/MTG-ISD-Deathfed' class="unverified">Deathfed</a><span class="set">(ISD)</span></li>
-                        <li><a href='https://bit.ly/MTG-M12-Illusionary-Might'>Illusionary Might</a><span class="set">(M12)</span></li>
-                        <li><a href='https://bit.ly/MTG-M12-Vampire-Onslaught'>Vampire Onslaught</a><span class="set">(M12)</span></li>
-                        <li><a href='https://bit.ly/MTG-NPH-War-of-Attrition'>War of Attrition</a><span class="set">(NPH)</span></li>
-                        <li><a href='https://bit.ly/MTG-NPH-Rot-from-Within' class="unverified">Rot from Within</a><span class="set">(NPH)</span></li>
-                        <li><a href='https://bit.ly/MTG-MBS-Into-the-Breach' class="unverified">Into the Breach</a><span class="set">(MBS)</span></li>
-                        <li><a href='https://bit.ly/MTG-MBS-Infect-and-Defile' class="unverified">Infect &amp; Defile</a><span class="set">(MBS)</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                        <h3 data-count='4'>Brawl Decks</h3>
+                        <ul class="list">
+                            <li><a href="https://bit.ly/MTG-ELD-Brawl-All">ALL 4 DECKS</a></li>
+                            <br />
+                            <li><a href="https://bit.ly/MTG-ELD-Brawl-Faerie-Schemes">Faerie Schemes</a></li>
+                            <li><a href="https://bit.ly/MTG-ELD-Brawl-Knights-Charge">Knights' Charge</a></li>
+                            <li><a href="https://bit.ly/MTG-ELD-Brawl-Savage-Hunger">Savage Hunger</a></li>
+                            <li><a href="https://bit.ly/MTG-ELD-Brawl-Wild-Bounty">Wild Bounty</a></li>
+                        </ul>
 
-        <div class='group level1' id='commander'>
-            <h2>Commander Series</h2>
-            <div class="list">
-                <p class="includes">
-                    one deck and accompanying tokens and oversized cards
-                </p>
-                <div class="group level2">
-                    <h3><span class='count' data-count=' (5)'>Commander 2020</span></h3>
-                    <ul class="list">
-                        <li><a href='https://bit.ly/MTG-C20-All-Decks'>ALL 5 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-C20-Arcane-Maelstrom'>Arcane Maelstrom</a></li>
-                        <li><a href='https://bit.ly/MTG-C20-Enhanced-Evolution'>Enhanced Evolution</a></li>
-                        <li><a href='https://bit.ly/MTG-C20-Ruthless-Regiment'>Ruthless Regiment</a></li>
-                        <li><span class='warning note'>The CSV lists the 5x Human // Treasure tokens included with the deck as Soldier // Treasure, since it's incorrectly named that on Deckbox. It imports without error this way, and the incorrectly named card in your Inventory should update to the new name without issue once Sebi updates the database.<br /><br /></span></li>
-                        <li><a href='https://bit.ly/MTG-C20-Symbiotic-Swarm'>Symbiotic Swarm</a></li>
-                        <li><a href='https://bit.ly/MTG-C20-Timeless-Wisdom'>Timeless Wisdom</a></li>
-                    </ul>
-                </div>
+                    </div> <!-- Brawl wrap -->
 
-                <div class="group level2">
-                    <h3><span class='count' data-count=' (4)'>Commander 2019</span></h3>
-                    <ul class="list">
-                        <li><a href='https://bit.ly/MTG-C19-All-Decks'>ALL 4 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-C19-Faceless-Menace'>Faceless Menace</a></li>
-                        <li><a href='https://bit.ly/MTG-C19-Merciless-Rage'>Merciless Rage</a></li>
-                        <li><a href='https://bit.ly/MTG-C19-Mystic-Intellect'>Mystic Intellect</a></li>
-                        <li><a href='https://bit.ly/MTG-C19-Primal-Genesis'>Primal Genesis</a></li>
-                    </ul>
-                </div>
+                    <div class='list_wrap' id='guild'>
 
-                <div class="group level2">
-                    <h3><span class='count' data-count=' (4)'>Commander 2018</span></h3>
-                    <ul class="list">
-                        <li><a href='https://bit.ly/MTG-C18-All-Decks'>ALL 4 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-C18-Adaptive-Enchantment'>Adaptive Enchantment</a></li>
-                        <li><a href='https://bit.ly/MTG-C18-Exquisite-Invention'>Exquisite Invention</a></li>
-                        <li><a href='https://bit.ly/MTG-C18-Natures-Vengeance'>Nature's Vengeance</a></li>
-                        <li><a href='https://bit.ly/MTG-C18-Subjective-Reality'>Subjective Reality</a></li>
-                    </ul>
-                </div>
+                        <h3 data-count='10'>Guild Kits</h3>
+                        <ul class="list">
 
-                <div class="group level2">
-                    <h3>Commander Anthology II</h3>
-                    <ul class="list">
-                        <li><a href='https://bit.ly/MTG-CMD-Anth2-Box-Set'>FULL BOX SET</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-CMD-Anth2-Devour-for-Power'>Devour for Power</a></li>
-                        <li><a href='https://bit.ly/MTG-CMD-Anth2-Built-from-Scratch'>Built from Scratch</a></li>
-                        <li><a href='https://bit.ly/MTG-CMD-Anth2-Wade-into-Battle'>Wade into Battle</a></li>
-                        <li><a href='https://bit.ly/MTG-CMD-Anth2-Breed-Lethality'>Breed Lethality</a></li>
-                    </ul>
-                </div>
+                            <p class="includes">
+                                one deck and accompanying tokens
+                            </p>
 
-                <div class="group level2">
-                    <h3><span class='count' data-count=' (4)'>Commander 2017</span></h3>
-                    <ul class="list">
-                        <li><a href='https://bit.ly/MTG-C17-All-Decks'>ALL 4 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-C17-Draconic-Domination'>Draconic Domination</a></li>
-                        <li><a href='https://bit.ly/MTG-C17-Feline-Ferocity'>Feline Ferocity</a></li>
-                        <li><a href='https://bit.ly/MTG-C17-Vampiric-Bloodlust'>Vampiric Bloodlust</a></li>
-                        <li><a href='https://bit.ly/MTG-C17-Arcane-Wizardry'>Arcane Wizardry</a></li>
-                    </ul>
-                </div>
+                            <h4 class="category">Ravnica Allegiance</h4>
+                            <li><a href="https://bit.ly/MTG-RNA-Kits-All">ALL 5 DECKS</a></li>
+                            <br />
+                            <li><a href="https://bit.ly/MTG-RNA-Kits-Azorius">Azorius</a></li>
+                            <li><a href="https://bit.ly/MTG-RNA-Kits-Gruul">Gruul</a></li>
+                            <li><a href="https://bit.ly/MTG-RNA-Kits-Orzhov">Orzhov</a></li>
+                            <li><a href="https://bit.ly/MTG-RNA-Kits-Rakdos">Rakdos</a></li>
+                            <li><a href="https://bit.ly/MTG-RNA-Kits-Simic">Simic</a></li>
 
-                <div class="group level2">
-                    <h3>Commander Anthology</h3>
-                    <ul class="list">
-                        <li><a href='https://bit.ly/MTG-CMD-Anth-Box-Set'>FULL BOX SET</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-CMD-Anth-Heavenly-Inferno'>Heavenly Inferno</a></li>
-                        <li><a href='https://bit.ly/MTG-CMD-Anth-Evasive-Maneuvers'>Evasive Maneuvers</a></li>
-                        <li><a href='https://bit.ly/MTG-CMD-Anth-Guided-by-Nature'>Guided by Nature</a></li>
-                        <li><a href='https://bit.ly/MTG-CMD-Anth-Plunder-the-Graves'>Plunder the Graves</a></li>
-                    </ul>
-                </div>
+                            <h4 class="category">Guilds of Ravnica</h4>
+                            <li><a href="https://bit.ly/MTG-GRN-Kits-All">ALL 5 DECKS</a></li>
+                            <br />
+                            <li><a href="https://bit.ly/MTG-GRN-Kits-Boros">Boros</a></li>
+                            <li><a href="https://bit.ly/MTG-GRN-Kits-Dimir">Dimir</a></li>
+                            <li><a href="https://bit.ly/MTG-GRN-Kits-Golgari">Golgari</a></li>
+                            <li><a href="https://bit.ly/MTG-GRN-Kits-Izzet">Izzet</a></li>
+                            <li><a href="https://bit.ly/MTG-GRN-Kits-Selesnya">Selesnya</a></li>
 
-                <div class="group level2">
-                    <h3><span class='count' data-count=' (5)'>Commander 2016</span></h3>
-                    <ul class="list">
-                        <li><a href='https://bit.ly/MTG-C16-All-Decks'>ALL 5 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-C16-Entropic-Uprising'>Entropic Uprising</a></li>
-                        <li><a href='https://bit.ly/MTG-C16-Open-Hostility'>Open Hostility</a></li>
-                        <li><a href='https://bit.ly/MTG-C16-Stalwart-Unity'>Stalwart Unity</a></li>
-                        <li><a href='https://bit.ly/MTG-C16-Breed-Lethality'>Breed Lethality</a></li>
-                        <li><a href='https://bit.ly/MTG-C16-Invent-Superiority'>Invent Superiority</a></li>
-                    </ul>
-                </div>
+                        </ul> <!-- Guild Kits -->
 
-                <div class="group level2">
-                    <h3><span class='count' data-count=' (5)'>Commander 2015</span></h3>
-                    <ul class="list">
-                        <li><a href='https://bit.ly/MTG-C15-All-Decks'>ALL 5 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-C15-Call-the-Spirits'>Call the Spirits</a></li>
-                        <li><a href='https://bit.ly/MTG-C15-Plunder-the-Graves'>Plunder the Graves</a></li>
-                        <li><a href='https://bit.ly/MTG-C15-Seize-Control'>Seize Control</a></li>
-                        <li><a href='https://bit.ly/MTG-C15-Swell-the-Host'>Swell the Host</a></li>
-                        <li><a href='https://bit.ly/MTG-C15-Wade-into-Battle'>Wade into Battle</a></li>
-                    </ul>
-                </div>
+                    </div> <!-- Guild Kit wrap -->
 
-                <div class="group level2">
-                    <h3><span class='count' data-count=' (5)'>Commander 2014</span></h3>
-                    <ul class="list">
-                        <li><a href='https://bit.ly/MTG-C14-All-Decks'>ALL 5 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-C14-Forged-in-Stone'>Forged in Stone</a></li>
-                        <li><a href='https://bit.ly/MTG-C14-Peer-Through-Time'>Peer Through Time</a></li>
-                        <li><a href='https://bit.ly/MTG-C14-Sworn-to-Darkness'>Sworn to Darkness</a></li>
-                        <li><a href='https://bit.ly/MTG-C14-Built-from-Scratch'>Built from Scratch</a></li>
-                        <li><a href='https://bit.ly/MTG-C14-Guided-by-Nature'>Guided by Nature</a></li>
-                    </ul>
-                </div>
+                    <div class='list_wrap' id='night'>
 
-                <div class="group level2">
-                    <h3><span class='count' data-count=' (5)'>Commander 2013</span></h3>
-                    <ul class="list">
-                        <li><a href='https://bit.ly/MTG-C13-All-Decks'>ALL 5 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-C13-Evasive-Maneuvers'>Evasive Maneuvers</a></li>
-                        <li><a href='https://bit.ly/MTG-C13-Eternal-Bargain'>Eternal Bargain</a></li>
-                        <li><a href='https://bit.ly/MTG-C13-Mind-Seize'>Mind Seize</a></li>
-                        <li><a href='https://bit.ly/MTG-C13-Power-Hungry'>Power Hungry</a></li>
-                        <li><a href='https://bit.ly/MTG-C13-Nature-of-the-Beast'>Nature of the Beast</a></li>
-                    </ul>
-                </div>
+                        <h3 data-count='2 box sets'><em>Magic</em> Game Night</h3>
+                        <ul class="list">
 
-                <div class="group level2">
-                    <h3><span class='count' data-count=' (5)'>Commander (2011)</span></h3>
-                    <ul class="list">
-                        <li><a href='https://bit.ly/MTG-CMD-All-Decks'>ALL 5 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-CMD-Heavenly-Inferno'>Heavenly Inferno</a></li>
-                        <li><a href='https://bit.ly/MTG-CMD-Mirror-Mastery'>Mirror Mastery</a></li>
-                        <li><a href='https://bit.ly/MTG-CMD-Counterpunch'>Counterpunch</a></li>
-                        <li><a href='https://bit.ly/MTG-CMD-Political-Puppets'>Political Puppets</a></li>
-                        <li><a href='https://bit.ly/MTG-CMD-Devour-for-Power'>Devour for Power</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                            <h4 class="category">2019</h4>
+                            <li><a href="https://bit.ly/MTG-GN-2019-Box-Set">FULL BOX SET</a></li>
+                            <br />
+                            <li><a href="https://bit.ly/MTG-GN-2019-Glorious">Glorious Combat</a></li>
+                            <li><a href="https://bit.ly/MTG-GN-2019-Aerial">Aerial Acrobatics</a></li>
+                            <li><a href="https://bit.ly/MTG-GN-2019-Endless">Endless Hordes</a></li>
+                            <li><a href="https://bit.ly/MTG-GN-2019-Draconic">Draconic Fury</a></li>
+                            <li><a href="https://bit.ly/MTG-GN-2019-Massive">Massive Might</a></li>
 
-        <div class='group level1' id='series'>
-            <h2>Other Series</h2>
-            <div class="list">
-                <div class="group level2" id='archenemy'>
-                    <h3><span class='count' data-count=' (4 + 1 box set)'>Archenemy</span></h3>
-                    <ul class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-Archenemy'>download all</a>
-                        </span>
-                        <li class="category">Archenemy: Nicol Bolas</li>
-                        <li><a href='https://bit.ly/MTG-Archenemy2-Box-Set'>FULL BOX SET<span class="note">+ schemes &amp; tokens</span></a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-Archenemy2-Nicol-Bolas'>Nicol Bolas<span class="note">+ 20 schemes</span></a></li>
-                        <li><a href='https://bit.ly/MTG-Archenemy2-Gideon-Jura'>Gideon Jura</a></li>
-                        <li><a href='https://bit.ly/MTG-Archenemy2-Chandra-Nalaar'>Chandra Nalaar</a></li>
-                        <li><a href='https://bit.ly/MTG-Archenemy2-Nissa-Revane'>Nissa Revane</a></li>
+                            <h4 class="category">2018</h4>
+                            <li><a href="https://bit.ly/MTG-Game-Night-Box-Set">FULL BOX SET</a></li>
+                            <br />
+                            <li><a href="https://bit.ly/MTG-Game-Night-Assemble">Assemble for Battle</a></li>
+                            <li><a href="https://bit.ly/MTG-Game-Night-Take">Take to the Skies</a></li>
+                            <li><a href="https://bit.ly/MTG-Game-Night-Rise">Rise from the Grave</a></li>
+                            <li><a href="https://bit.ly/MTG-Game-Night-Unleash">Unleash Chaos</a></li>
+                            <li><a href="https://bit.ly/MTG-Game-Night-Grow">Grow Fierce</a></li>
 
-                        <li class="category">Archenemy (2010)</li>
-                        <p class="includes">
-                            one deck and accompanying scheme cards
-                        </p>
-                        <li><a href='https://bit.ly/MTG-Archenemy-All-Decks'>ALL 4 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-Archenemy-Bring-About' style="overflow:hidden;white-space:nowrap">Bring About the Undead Apocalypse</a></li>
-                        <li><a href='https://bit.ly/MTG-Archenemy-Assemble' style="overflow:hidden;white-space:nowrap">Assemble the Doomsday Machine</a></li>
-                        <li><a href='https://bit.ly/MTG-Archenemy-Trample' style="overflow:hidden;white-space:nowrap">Trample Civilization Underfoot</a></li>
-                        <li><a href='https://bit.ly/MTG-Archenemy-Scorch' style="overflow:hidden;white-space:nowrap">Scorch the World with Dragonfire</a></li>
-                    </ul>
-                </div>
-                <div class="group level2" id='planechase'>
-                    <h3><span class='count' data-count=' (8 + 1 box set)'>Planechase</span></h3>
-                    <ul class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-Planechase'>download all</a>
-                        </span>
-                        <li class="category">Planechase Anthology</li>
-                        <li><a href='https://bit.ly/MTG-Planechase-Anth-Box-Set'>FULL BOX SET</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-Planechase-Anth-Chaos'>Chaos Reigns</a></li>
-                        <li><a href='https://bit.ly/MTG-Planechase-Anth-Night'>Night of the Ninja</a></li>
-                        <li><a href='https://bit.ly/MTG-Planechase-Anth-Primordial'>Primordial Hunger</a></li>
-                        <li><a href='https://bit.ly/MTG-Planechase-Anth-Savage'>Savage Auras</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-Planechase-Anth-Planes'>Planes / Phenomena</a></li>
-                        <li><a href='https://bit.ly/MTG-Planechase-Anth-Tokens'>Tokens</a></li>
-                        <br />
+                        </ul> <!-- Game Night Sets -->
 
-                        <li class="category">Planechase 2012</li>
-                        <p class="includes">
-                            one deck and accompanying plane&nbsp;/ phenomenon cards 
-                        </p>
-                        <li><a href='https://bit.ly/MTG-Planechase-2012-All-Decks'>ALL 4 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-Planechase-2012-Chaos'>Chaos Reigns</a></li>
-                        <li><a href='https://bit.ly/MTG-Planechase-2012-Night'>Night of the Ninja</a></li>
-                        <li><a href='https://bit.ly/MTG-Planechase-2012-Primordial'>Primordial Hunger</a></li>
-                        <li><a href='https://bit.ly/MTG-Planechase-2012-Savage'>Savage Auras</a></li>
-                        <br />
+                    </div> <!-- Game Night wrap -->
 
-                        <li class="category">Planechase (2009)</li>
-                        <p class="includes">
-                            one deck and accompanying plane&nbsp;/ phenomenon cards 
-                        </p>
-                        <li><a href='https://bit.ly/MTG-Planechase-2009-All-Decks'>ALL 4 DECKS</a></li>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-Planechase-2009-Elemental'>Elemental Thunder</a></li>
-                        <li><a href='https://bit.ly/MTG-Planechase-2009-Metallic'>Metallic Dreams</a></li>
-                        <li><a href='https://bit.ly/MTG-Planechase-2009-Strike'>Strike Force</a></li>
-                        <li><a href='https://bit.ly/MTG-Planechase-2009-Zombie'>Zombie Empire</a></li>
-                    </ul>
-                </div>
-                <div class='group level2' id='duel'>
-                    <h3 class="discontinued"><span class='count' data-count=' (23)'>Duel Decks</span></h3>
-                    <ul class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-Duel-Decks'>download all</a>
-                        </span>
-                        <br />
-                        <li><a href='https://bit.ly/MTG-Duel-Decks-Anthology'>Duel Decks Anthology</a></li>
-                        <p class="includes">
-                            both decks and accompanying tokens
-                        </p>
-                        <li><a href='https://bit.ly/MTG-Global-Jiang-and-Mu'>Jiang Yanggu vs. Mu Yanling</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Elves-v-Inventors'>Elves vs. Inventors</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Merfolk-v-Goblins'>Merfolk vs. Goblins</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Mind-v-Might'>Mind vs. Might</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Nissa-v-Ob-Nixilis'>Nissa vs. Ob Nixilis</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Blessed-v-Cursed'>Blessed vs. Cursed</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Zendikar-v-Eldrazi'>Zendikar vs. Eldrazi</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Elspeth-v-Kiora'>Elspeth vs. Kiora</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Speed-v-Cunning'>Speed vs. Cunning</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Jace-v-Vraska'>Jace vs. Vraska</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Heroes-v-Monsters'>Heroes vs. Monsters</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Sorin-v-Tibalt'>Sorin vs. Tibalt</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Izzet-v-Golgari'>Izzet vs. Golgari</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Venser-v-Koth'>Venser vs. Koth</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Ajani-v-Nicol-Bolas'>Ajani vs. Nicol Bolas</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Knights-v-Dragons'>Knights vs. Dragons</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Elspeth-v-Tezzeret'>Elspeth vs. Tezzeret</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Phyrexia-v-Coalition'>Phyrexia vs. The Coalition</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Garruk-v-Liliana'>Garruk vs. Liliana</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Divine-v-Demonic'>Divine vs. Demonic</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Jace-v-Chandra' class="unverified">Jace vs. Chandra</a></li>
-                        <li><a href='https://bit.ly/MTG-Duel-Elves-v-Goblins' class="unverified">Elves vs. Goblins</a></li>
-                    </ul>
-                </div>
-                <div class="group level2" id='pds'>
-                    <h3 class="discontinued"><span class='count' data-count=' (3)'>Premium Decks</span></h3>
-                    <ul class="list">
-                        <span class="small">
-                            <a href='https://bit.ly/MTG-All-PDS'>download all</a>
-                        </span>
-                        <li><a href='https://bit.ly/MTG-PDS-Graveborn'>Graveborn</a></li>
-                        <li><a href='https://bit.ly/MTG-PDS-Fire-and-Lightning'>Fire and Lightning</a></li>
-                        <li><a href='https://bit.ly/MTG-PDS-Slivers'>Slivers</a></li>
-                    </ul>
-                </div>
+                    <div class='list_wrap' id='explorers'>
 
-            </div>
-        </div>
+                        <h3 data-count='1 box set'>Explorers of Ixalan</h3>
+                        <ul class="list">
+                            <li><a href="https://bit.ly/MTG-Explorers-Box-Set">FULL BOX SET</a></li>
+                            <br />
+                            <li><a href="https://bit.ly/MTG-Explorers-Legion-of-Dusk">Legion of Dusk</a></li>
+                            <li><a href="https://bit.ly/MTG-Explorers-Brazen-Coalition">Brazen Coalition</a></li>
+                            <li><a href="https://bit.ly/MTG-Explorers-River-Heralds">River Heralds</a></li>
+                            <li><a href="https://bit.ly/MTG-Explorers-Sun-Empire">Sun Empire</a></li>
+                        </ul>
 
-        <div class='group level1' id='other'>
-            <h2>Misc. Precons</h2>
-            <div class="list">
-                <div class="group level2" id='unsanctioned'>
-                    <h3><span class='count' data-count=' (1 box set)'>Unsanctioned</span></h3>
-                    <ul class="list">
-                        <li><a href="https://bit.ly/MTG-Unsanctioned">Unsanctioned Box Set</a></li>
-                    </ul>
-                </div>
-                <div class="group level2" id='brawl'>
-                    <h3><span class='count' data-count=' (4)'>Brawl Decks</span></h3>
-                    <ul class="list">
-                        <li><a href="https://bit.ly/MTG-ELD-Brawl-All">ALL 4 DECKS</a></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-ELD-Brawl-Faerie-Schemes">Faerie Schemes</a></li>
-                        <li><a href="https://bit.ly/MTG-ELD-Brawl-Knights-Charge">Knights' Charge</a></li>
-                        <li><a href="https://bit.ly/MTG-ELD-Brawl-Savage-Hunger">Savage Hunger</a></li>
-                        <li><a href="https://bit.ly/MTG-ELD-Brawl-Wild-Bounty">Wild Bounty</a></li>
-                    </ul>
-                </div>
-                <div class="group level2" id='guild'>
-                    <h3><span class='count' data-count=' (10)'>Guild Kits</span></h3>
-                    <ul class="list">
-                        <span class="small">
-                            <a href="https://bit.ly/MTG-All-Guild-Kits">download all</a>
-                        </span>
-                        <p class="includes">
-                            one deck and accompanying tokens
-                        </p>
-                        <li class="category">Ravnica Allegiance</li>
-                        <li><a href="https://bit.ly/MTG-RNA-Kits-All">ALL 5 DECKS</a></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-RNA-Kits-Azorius">Azorius</a></li>
-                        <li><a href="https://bit.ly/MTG-RNA-Kits-Gruul">Gruul</a></li>
-                        <li><a href="https://bit.ly/MTG-RNA-Kits-Orzhov">Orzhov</a></li>
-                        <li><a href="https://bit.ly/MTG-RNA-Kits-Rakdos">Rakdos</a></li>
-                        <li><a href="https://bit.ly/MTG-RNA-Kits-Simic">Simic</a></li>
+                    </div> <!-- Explorers of XLN wrap -->
 
-                        <li class="category">Guilds of Ravnica</li>
-                        <li><a href="https://bit.ly/MTG-GRN-Kits-All">ALL 5 DECKS</a></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-GRN-Kits-Boros">Boros</a></li>
-                        <li><a href="https://bit.ly/MTG-GRN-Kits-Dimir">Dimir</a></li>
-                        <li><a href="https://bit.ly/MTG-GRN-Kits-Golgari">Golgari</a></li>
-                        <li><a href="https://bit.ly/MTG-GRN-Kits-Izzet">Izzet</a></li>
-                        <li><a href="https://bit.ly/MTG-GRN-Kits-Selesnya">Selesnya</a></li>
-                    </ul>
-                </div>
-                <div class="group level2" id='night'>
-                    <h3><span class='count' data-count=' (2 box sets)'><em>Magic</em> Game Night</span></h3>
-                    <ul class="list">
-                        <li class="category">2019</li>
-                        <li><a href="https://bit.ly/MTG-GN-2019-Box-Set">FULL BOX SET</a></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-GN-2019-Glorious">Glorious Combat</a></li>
-                        <li><a href="https://bit.ly/MTG-GN-2019-Aerial">Aerial Acrobatics</a></li>
-                        <li><a href="https://bit.ly/MTG-GN-2019-Endless">Endless Hordes</a></li>
-                        <li><a href="https://bit.ly/MTG-GN-2019-Draconic">Draconic Fury</a></li>
-                        <li><a href="https://bit.ly/MTG-GN-2019-Massive">Massive Might</a></li>
+                    <div class='list_wrap' id='modern'>
 
-                        <li class="category">2018</li>
-                        <li><a href="https://bit.ly/MTG-Game-Night-Box-Set">FULL BOX SET</a></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-Game-Night-Assemble">Assemble for Battle</a></li>
-                        <li><a href="https://bit.ly/MTG-Game-Night-Take">Take to the Skies</a></li>
-                        <li><a href="https://bit.ly/MTG-Game-Night-Rise">Rise from the Grave</a></li>
-                        <li><a href="https://bit.ly/MTG-Game-Night-Unleash">Unleash Chaos</a></li>
-                        <li><a href="https://bit.ly/MTG-Game-Night-Grow">Grow Fierce</a></li>
-                    </ul>
-                </div>
-                <div class="group level2" id='explorers'>
-                    <h3><span class='count' data-count=' (1 box set)'>Explorers of Ixalan</span></h3>
-                    <ul class="list">
-                        <li><a href="https://bit.ly/MTG-Explorers-Box-Set">FULL BOX SET</a></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-Explorers-Legion-of-Dusk">Legion of Dusk</a></li>
-                        <li><a href="https://bit.ly/MTG-Explorers-Brazen-Coalition">Brazen Coalition</a></li>
-                        <li><a href="https://bit.ly/MTG-Explorers-River-Heralds">River Heralds</a></li>
-                        <li><a href="https://bit.ly/MTG-Explorers-Sun-Empire">Sun Empire</a></li>
-                    </ul>
-                </div>
-                <div class="group level2" id='modern'>
-                    <h3><span class='count' data-count=' (1)'>Modern Event Deck</span></h3>
-                    <ul class="list">
-                        <li><a href="https://bit.ly/MTG-Modern-Event-Deck">March of the Multitudes</a></li>
-                    </ul>
-                </div>
-                <div class="group level2" id='dotp'>
-                    <h3><span class='count' data-count=' (5)'>Duels of the Planeswalkers</span></h3>
-                    <ul class="list">
-                        <li><a href="https://bit.ly/MTG-All-DotP">ALL 5 DECKS</a></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-DotP-Thoughts">Thoughts of the Wind</a></li>
-                        <li><a href="https://bit.ly/MTG-DotP-Eyes">Eyes of Shadow</a></li>
-                        <li><a href="https://bit.ly/MTG-DotP-Hands">Hands of Flame</a></li>
-                        <li><a href="https://bit.ly/MTG-DotP-Teeth">Teeth of the Predator</a></li>
-                        <li><a href="https://bit.ly/MTG-DotP-Ears">Ears of the Elves</a></li>
-                    </ul>
-                </div>
-                <div class="group level2" id='early'>
-                    <h3><span class='count' data-count=' (4 box sets)'>Early Box Sets</span></h3>
-                    <ul class="list">
-                        <li class="category">Deckmasters 2001</li>
-                        <li><a href="https://bit.ly/MTG-Deckmasters-Box-Set" class="unverified">FULL BOX SET</a></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-Deckmasters-Finkel" class="unverified">Finkel</a></li>
-                        <li><a href="https://bit.ly/MTG-Deckmasters-Garfield" class="unverified">Garfield</a></li>
+                        <h3 data-count='1'>Modern Event Deck</h3>
+                        <ul class="list">
+                            <li><a href="https://bit.ly/MTG-Modern-Event-Deck">March of the Multitudes</a></li>
+                        </ul>
 
-                        <li class="category">Beatdown</li>
-                        <li><a href="https://bit.ly/MTG-Beatdown-Box-Set" class="unverified">FULL BOX SET</a></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-Beatdown-Aerodoom" class="unverified">Aerodoom</a></li>
-                        <li><a href="https://bit.ly/MTG-Beadown-Ground-Pounder" class="unverified">Ground Pounder</a></li>
+                    </div>
 
-                        <li class="category">Battle Royale</li>
-                        <li><a href="https://bit.ly/MTG-Royale-Box-Set">FULL BOX SET</a></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-Royale-Spirit-Gale">Spirit Gale</a></li>
-                        <li><a href="https://bit.ly/MTG-Royale-Cinder-Heart">Cinder Heart</a></li>
-                        <li><a href="https://bit.ly/MTG-Royale-Chargoyf">Chargoyf</a></li>
-                        <li><a href="https://bit.ly/MTG-Royale-The-Deluge">The Deluge</a></li>
+                    <div class='list_wrap' id='dotp'>
 
-                        <li class="category">Anthologies</li>
-                        <li><a href="https://bit.ly/MTG-Anthologies-Box-Set" class="unverified">FULL BOX SET</a></li>
-                        <br />
-                        <li><a href="https://bit.ly/MTG-Anthologies-Defenders" class="unverified">Defenders of the Cause</a></li>
-                        <li><a href="https://bit.ly/MTG-Anthologies-Dark-Alliance" class="unverified">Dark Alliance</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                        <h3 data-count='5'>Duels of the Planeswalkers</h3>
+                        <ul class="list">
+                            <li><a href="https://bit.ly/MTG-All-DotP">ALL 5 DECKS</a></li>
+                            <br />
+                            <li><a href="https://bit.ly/MTG-DotP-Thoughts">Thoughts of the Wind</a></li>
+                            <li><a href="https://bit.ly/MTG-DotP-Eyes">Eyes of Shadow</a></li>
+                            <li><a href="https://bit.ly/MTG-DotP-Hands">Hands of Flame</a></li>
+                            <li><a href="https://bit.ly/MTG-DotP-Teeth">Teeth of the Predator</a></li>
+                            <li><a href="https://bit.ly/MTG-DotP-Ears">Ears of the Elves</a></li>
+                        </ul>
 
-    </section></div>
+                    </div> <!-- DotP wrap -->
+
+                    <div class='list_wrap' id='early'>
+
+                        <h3 data-count='4 box sets'>Early Box Sets</h3>
+                        <ul class="list">
+
+                            <li class="category">Deckmasters 2001</li>
+                            <li><a href="https://bit.ly/MTG-Deckmasters-Box-Set" class="unverified">FULL BOX SET</a></li>
+                            <br />
+                            <li><a href="https://bit.ly/MTG-Deckmasters-Finkel" class="unverified">Finkel</a></li>
+                            <li><a href="https://bit.ly/MTG-Deckmasters-Garfield" class="unverified">Garfield</a></li>
+
+                            <li class="category">Beatdown</li>
+                            <li><a href="https://bit.ly/MTG-Beatdown-Box-Set" class="unverified">FULL BOX SET</a></li>
+                            <br />
+                            <li><a href="https://bit.ly/MTG-Beatdown-Aerodoom" class="unverified">Aerodoom</a></li>
+                            <li><a href="https://bit.ly/MTG-Beadown-Ground-Pounder" class="unverified">Ground Pounder</a></li>
+
+                            <li class="category">Battle Royale</li>
+                            <li><a href="https://bit.ly/MTG-Royale-Box-Set">FULL BOX SET</a></li>
+                            <br />
+                            <li><a href="https://bit.ly/MTG-Royale-Spirit-Gale">Spirit Gale</a></li>
+                            <li><a href="https://bit.ly/MTG-Royale-Cinder-Heart">Cinder Heart</a></li>
+                            <li><a href="https://bit.ly/MTG-Royale-Chargoyf">Chargoyf</a></li>
+                            <li><a href="https://bit.ly/MTG-Royale-The-Deluge">The Deluge</a></li>
+
+                            <li class="category">Anthologies</li>
+                            <li><a href="https://bit.ly/MTG-Anthologies-Box-Set" class="unverified">FULL BOX SET</a></li>
+                            <br />
+                            <li><a href="https://bit.ly/MTG-Anthologies-Defenders" class="unverified">Defenders of the Cause</a></li>
+                            <li><a href="https://bit.ly/MTG-Anthologies-Dark-Alliance" class="unverified">Dark Alliance</a></li>
+
+                        </ul> <!-- Early Sets -->
+
+                    </div> <!-- Early Sets wrap -->
+
+                </div> <!-- Misc Precons -->
+
+            </div> <!-- Misc wrap -->
+
+        </div> <!-- Column #2 -->
+
+    </div> <!-- Precon lists -->
 
 
 
-    <div class="page_header" style="margin-top:3em">
-        <div class="page_title">
-            Unverified / missing CSV files
-        </div>
-    </div>
+    <h1>Unverified / missing CSV files</h1>
+
     <div class="indented_content">
         If you would like to contribute to the project, below is a list of all unverified or missing CSV files. Glance through the lists and see if a deck you own is among them. They are organized by the following product types (then sorted by edition):
-        <br /><br />
-        <ul style="margin-left: 2em">
+
+        <ul style="margin: 2em">
             <li>Duel Deck</li>
             <li>Event Deck</li>
             <li>Intro Pack</li>
@@ -1507,7 +1508,8 @@
             <li>OTHER</li>
         </ul>
     </div>
-    <div class='page'>
+
+    <div class='columns'>
         <table>
             <thead>
                 <tr>
@@ -3237,148 +3239,75 @@
         </table>
     </div>
 
-
-    <a href="#" class="show" id="top">^</a>
-
+</main>
 
 
-    <script type="text/javascript">
-        function adjustCols() {
+<script type="text/javascript">
+    (function() {
+
+        $( '#menu' ).remove();
+
+        // Create mutable column layout
+        var group = $( '.list_group' );
+        var col3 =  $( '<div class="column" id="col_3"/>' );
+        col3.append( group[4] ).appendTo( '#precon_lists' );
+        $( '#col_1' ).append( group[1] );
+        $( window ).on( 'resize', function() {
             var winWidth = window.innerWidth,
-                col3 = document.getElementById('col3'),
-                col1 = document.getElementById('col1'),
-                s = document.getElementById('standard'),
-                page, col1, col2, d, c, o;
-            if ( (winWidth > 990 && !col3) || (winWidth < 991 && col3) || (s.parentElement !== col1) ) {
-                page = document.getElementById('page');
-                col1 = document.getElementById('col1');
-                col2 = document.getElementById('col2');
-                s = document.getElementById('standard');
-                d = document.getElementById('series');
-                c = document.getElementById('commander');
-                o = document.getElementById('other');
-                if ( s.parentElement !== col1 ) {
-                    col1.appendChild( s );
-                    col1.appendChild( c );
-                }
-                if ( winWidth > 990 && !col3 ) {
-                    col3 = col3 || document.createElement( 'section' );
-                    col3.id = 'col3';
-                    col3.appendChild( o );
-                    col2.insertBefore( c, d );
-                    page.appendChild( col3 );
-                } else if ( winWidth < 991 && col3 ) {
-                    col1.appendChild( c );
-                    col2.appendChild( o );
-                    page.removeChild( col3 );
+                desktop = jQuery.contains( document, col3[0] );
+            if ( (winWidth > 990 && !desktop) || (winWidth < 991 && desktop) ) {
+                if ( winWidth > 990 && !desktop ) {
+                    col3.append( group[4] ).appendTo( '#precon_lists' );
+                    $( '#col_2' ).prepend( group[2] );
+                } else if ( winWidth < 991 && desktop ) {
+                    $( '#col_1' ).append( group[2] );
+                    $( '#col_2' ).append( group[4] );
+                    col3.detach();
                 }
             }
-        }
-        window.onresize = adjustCols;
-        adjustCols();
+        }).trigger( 'resize' );
 
-        function toggleClass( element, cls ) {
-            if (element.classList) { 
-                element.classList.toggle( cls );
+
+        // Create dropdowns
+        $( 'main' ).find( 'h2, h3, h4' ).filter( '[class!="category"]' ).each(function(){
+            var $this = $( this ),
+                list = $this.next( '.list' ).hide();
+            $this.click( function(){
+                var isOpen = list.attr( 'data-opened' ) === 'true';
+                list.slideToggle( isOpen )
+                    .attr( 'data-opened', !isOpen );
+                $this.toggleClass( 'open closed' );
+            })
+            .toggleClass( 'closed ready' )
+            .filter( '[data-count]' ).append(
+                $( '<span/>' )
+                    .addClass( 'product-count' )
+                    .text( $this.attr( 'data-count' ) )
+            );
+        });
+
+
+        // Create scroll-to-top link
+        var t = $( '<a href="#"/>' )
+            .text( '^' )
+            .attr( 'id', 'top' )
+            .click(function( e ){
+                e.preventDefault();
+                var speed = Math.min( $(window).scrollTop()/4, 500 );
+                $( 'html,body' ).animate( {scrollTop:0}, speed );
+                return false;
+            })
+            .hide()
+            .appendTo( 'body' );
+        $( window ).scroll(function(){
+            if ( $(this).scrollTop() > 120 ) {
+                t.fadeIn();
             } else {
-                // For IE9
-                var classes = element.className.split(" ");
-                var i = classes.indexOf( cls );
-
-                if (i >= 0) {
-                    classes.splice(i, 1);
-                }
-                else {
-                    classes.push( cls );
-                    element.className = classes.join(" "); 
-                }
+                t.fadeOut();
             }
-        }
+        });
+    })();
+</script>
 
-
-        function collapseSection( list ) {
-            // get the height of the element's inner content, regardless of its actual size
-            var listHeight = list.scrollHeight;
-
-            // temporarily disable all css transitions
-            var listTransition = list.style.transition;
-            list.style.transition = '';
-
-            // on the next frame (as soon as the previous style change has taken effect),
-            // explicitly set the element's height to its current pixel height, so we 
-            // aren't transitioning out of 'auto'
-            requestAnimationFrame(function() {
-                list.style.height = listHeight + 'px';
-                list.style.transition = listTransition;
-                
-                // on the next frame (as soon as the previous style change has taken effect),
-                // have the element transition to height: 0
-                requestAnimationFrame(function() {
-                    list.style.height = '0px';
-                    toggleClass( list, 'hide' );
-                });
-            });
-
-            // mark the section as "currently collapsed"
-            list.setAttribute( 'data-opened', 'false' );
-        }
-        function expandSection( list ) {
-            // get the height of the element's inner content, regardless of its actual size
-            var listHeight = list.scrollHeight;
-
-            // have the element transition to the height of its inner content
-            list.style.height = listHeight + 'px';
-
-            // when the next css transition finishes (which should be the one we just triggered)
-            list.addEventListener('transitionend', function(e) {
-                // remove this event listener so it only gets triggered once
-                list.removeEventListener('transitionend', arguments.callee);
-
-                // remove "height" from the element's inline styles, so it can return to its initial value
-                list.style.height = null;
-
-                // mark the section as "currently not collapsed"
-                list.setAttribute( 'data-opened', 'true' );
-                toggleClass( list, 'hide' );
-            });
-        }
-
-
-        for ( let el of document.getElementById( 'page' ).querySelectorAll( 'h2, h3, h4' ) ) {
-            var list = el.parentElement.querySelectorAll( '.list' )[0];
-            el.onclick = function(e) {
-                var list = el.parentElement.querySelectorAll( '.list' )[0];
-                var isOpened = list.getAttribute( 'data-opened' ) === 'true';
-                toggleClass( el, 'closed' );
-                if ( isOpened ) {
-                    collapseSection( list );
-                } else {
-                    expandSection( list );
-                }
-            };
-            list.style.height = '0px';
-            toggleClass( list, 'hide' );
-            toggleClass( el, 'closed' );
-            toggleClass( el, 'ready' );
-        }
-        document.getElementById( 'menu' ).style.display = 'none';
-
-
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        var t = document.getElementById("top");
-        function scrollFunction() {
-            if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
-                t.className = 'show';
-            } else {
-                t.className = null;
-            }
-            return scrollFunction;
-        }
-        t.style.display = 'none';
-        window.onscroll = scrollFunction();
-        t.style.display = null;
-
-    </script>
 </body>
 </html>
