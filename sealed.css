@@ -558,3 +558,34 @@ tbody::after {
 .warning {
     color: #c00 !important;
 }
+
+
+
+/* Changelog Styles */
+
+#changelog {
+    width: 80%;
+    margin: 0 auto;
+}
+#changelog hr {
+    margin: 4rem 0;
+    margin-left: -2rem;
+}
+#changelog h2 {
+    background-color: black;
+    font-family: monospace;
+    color: white;
+    font-size: 1.2rem;
+    margin: 2rem 0 0.5rem;
+    padding: 0.2rem 0.5rem 0.3rem;
+}
+#changelog h3 {
+    margin-left: 2rem;
+}
+#changelog ul {
+    margin-left: 2rem;
+}
+#changelog > ul {
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
