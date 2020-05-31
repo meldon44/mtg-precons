@@ -5,7 +5,7 @@
     <meta name='viewport'
           content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>MTG Preconstructed Products</title>
-    <link rel='stylesheet' href='sealed.css?t=4'/>
+    <link rel='stylesheet' href='sealed.css?t=5'/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="nanomd.min.js"></script>
 </head>
@@ -3245,11 +3245,6 @@
     <h1>CHANGELOG</h1>
 
     <textarea id='changelog' style='width: 100%; height: 500px; padding: 1rem;' disabled>
-## [1.2.2] - 2020-05-31
-### Fixed
-- Reverted dropdowns back to CSS3 transitions instead of jQuery animations for better mobile ux
-
-
 ## [1.2.1] - 2020-05-30
 ### Added
 - Changelog created and populated from forum posts
@@ -3540,22 +3535,11 @@
         // Create dropdowns
         $( 'main' ).find( 'h2, h3, h4' ).filter( '[class!="category"]' ).each(function(){
             var $this = $( this ),
-                list = $this.next( '.list' ).attr( 'data-opened', false );
+                list = $this.next( '.list' ).hide();
             $this.click(function(){
                 var isOpen = list.attr( 'data-opened' ) === 'true';
-
-                list.css( {'height':list.prop('scrollHeight')+'px'} );
-                if ( isOpen ) {
-                    list.css( {'overflow':'visible'} );
-                    setTimeout( function() {
-                        list.css( {'height':'0px'} );
-                    }, 10 );
-                }
-                setTimeout( function() {
-                    list.css( {'overflow':'','height':''} );
-                }, 310 );
-
-                list.attr( 'data-opened', !isOpen );
+                list.slideToggle( isOpen )
+                    .attr( 'data-opened', !isOpen );
                 $this.toggleClass( 'open closed' );
             })
             .toggleClass( 'closed ready' )
