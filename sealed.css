@@ -380,6 +380,7 @@ tbody::after {
     cursor: default;
     font-weight: bold;
     font-size: 1rem;
+    font-variant: none;
     margin-top: 1.5rem;
     padding: 0 0.35rem;
     font-variant: none;
@@ -437,14 +438,7 @@ tbody::after {
 #precon_lists .list {
     background-color: inherit;
     margin: 1rem 0 0;
-    -webkit-transition: height 0.3s, margin 0.3s;
-    -o-transition: height 0.3s, margin 0.3s;
-    transition: height 0.3s, margin 0.3s;
-}
-#precon_lists .closed + .list {
-    margin: 0px;
-    height: 0px;
-    overflow: hidden;
+    overflow: visible !important;
 }
 #precon_lists .list_group > .list {
     margin: 0 0.5rem;
