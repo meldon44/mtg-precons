@@ -5,7 +5,7 @@
     <meta name='viewport'
           content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>MTG Preconstructed Products</title>
-    <link rel='stylesheet' href='sealed.css?t=3'/>
+    <link rel='stylesheet' href='sealed.css?t=4'/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="nanomd.min.js"></script>
 </head>
@@ -37,9 +37,9 @@
         <div id="page_info">
             <blockquote class='note' style='color: #aaa; margin-bottom: 1rem;'>This page is a resource resulting from this <a style='color: #aaa;' href='https://deckbox.org/forum/viewtopic.php?id=28865'>Deckbox forum post</a>.</blockquote>
 
-            <p>Download CSV files for preconstructed decks from the lists below, then go to <strong>Inventory&nbsp;&gt; Add&nbsp;Cards&nbsp;&gt; From&nbsp;a&nbsp;CSV&nbsp;File</strong> and import the deck.</p>
+            <p>Download CSV files for preconstructed decks from the lists below, then go to <strong>Inventory&nbsp;&gt; Add&nbsp;Cards&nbsp;&gt; From&nbsp;a&nbsp;CSV&nbsp;File</strong> and import the deck. Note that this will <em>add to</em> your inventory rather than <em>replace</em> your inventory.</p>
 
-            <p>Please note what cards each CSV contains prior to importing, in case you would like to edit the CSV first (e.g. split up a Duel Deck with a friend, add tokens to a Commander deck, remove the basic lands, etc.).</p>
+            <p>Please note what cards each CSV contains prior to importing, in case you would like to edit the CSV first (e.g. split up a Duel Deck with a friend, change tokens from double-sided to single-sided, remove the basic lands, etc.).</p>
 
             <strong class='heading'>CSV Defaults:</strong>
             <img src="https://deckbox.org/images/icon_spacer.gif" class="sprite s_star2 sprite_off" /> (no condition)<br />
@@ -3245,6 +3245,11 @@
     <h1>CHANGELOG</h1>
 
     <textarea id='changelog' style='width: 100%; height: 500px; padding: 1rem;' disabled>
+## [1.2.2] - 2020-05-31
+### Fixed
+- Reverted dropdowns back to CSS3 transitions instead of jQuery animations for better mobile ux
+
+
 ## [1.2.1] - 2020-05-30
 ### Added
 - Changelog created and populated from forum posts
@@ -3288,7 +3293,7 @@
 
 
 ## [1.1.10] - 2020-01-18
-### Changed
+### Fixed
 - Game Night 2019 tokens now working
 
 
@@ -3440,9 +3445,6 @@
 - Duel Decks Anthology CSV
 - "All Decks" CSVs added for multiple products
 
-### Changed
-- List of Missing CSVs
-
 
 ## [1.0.0] - 2019-03-13
 ### Added
@@ -3538,11 +3540,22 @@
         // Create dropdowns
         $( 'main' ).find( 'h2, h3, h4' ).filter( '[class!="category"]' ).each(function(){
             var $this = $( this ),
-                list = $this.next( '.list' ).hide();
-            $this.click( function(){
+                list = $this.next( '.list' ).attr( 'data-opened', false );
+            $this.click(function(){
                 var isOpen = list.attr( 'data-opened' ) === 'true';
-                list.slideToggle( isOpen )
-                    .attr( 'data-opened', !isOpen );
+
+                list.css( {'height':list.prop('scrollHeight')+'px'} );
+                if ( isOpen ) {
+                    list.css( {'overflow':'visible'} );
+                    setTimeout( function() {
+                        list.css( {'height':'0px'} );
+                    }, 10 );
+                }
+                setTimeout( function() {
+                    list.css( {'overflow':'','height':''} );
+                }, 310 );
+
+                list.attr( 'data-opened', !isOpen );
                 $this.toggleClass( 'open closed' );
             })
             .toggleClass( 'closed ready' )
