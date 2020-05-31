@@ -370,6 +370,7 @@ tbody::after {
     background-image: linear-gradient(to bottom, #ddf, #eef);
 }
 #precon_lists h4 {
+    background-color: inherit;
     border: solid #aaa;
     border-width: 1px 0 0;
     font-variant: small-caps;
@@ -423,6 +424,7 @@ tbody::after {
     display: table;
 }
 #precon_lists .list_wrap {
+    overflow: hidden;
     margin: 1rem 0;
     background-color: #eef;
    -webkit-box-shadow: #000 2px 2px 4px;
@@ -433,7 +435,16 @@ tbody::after {
     background-color: #ddf;
 }
 #precon_lists .list {
+    background-color: inherit;
     margin: 1rem 0 0;
+    -webkit-transition: height 0.3s, margin 0.3s;
+    -o-transition: height 0.3s, margin 0.3s;
+    transition: height 0.3s, margin 0.3s;
+}
+#precon_lists .closed + .list {
+    margin: 0px;
+    height: 0px;
+    overflow: hidden;
 }
 #precon_lists .list_group > .list {
     margin: 0 0.5rem;
