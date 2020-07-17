@@ -4,8 +4,9 @@
     <meta charset='UTF-8' />
     <meta name='viewport'
           content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <meta name="theme-color" content="#3B5998">
     <title>MTG Preconstructed Products</title>
-    <link rel='stylesheet' href='sealed.css?t=5'/>
+    <link rel='stylesheet' href='sealed.css?t=6'/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="nanomd.min.js"></script>
 </head>
@@ -93,6 +94,7 @@
             </li>
             <li><a href="#other">Other Precons</a>
                 <ul>
+                    <li><a href="#jumpstart">Jumpstart</a></li>
                     <li><a href="#unsanctioned">Unsanctioned</a></li>
                     <li><a href="#brawl">Brawl Decks</a></li>
                     <li><a href="#guild">Guild Kits</a></li>
@@ -1064,7 +1066,6 @@
                             <li><a href='https://bit.ly/MTG-C20-Arcane-Maelstrom'>Arcane Maelstrom</a></li>
                             <li><a href='https://bit.ly/MTG-C20-Enhanced-Evolution'>Enhanced Evolution</a></li>
                             <li><a href='https://bit.ly/MTG-C20-Ruthless-Regiment'>Ruthless Regiment</a></li>
-                            <li class='warning note'>The CSV lists the 5x Human // Treasure tokens included with the deck as Soldier // Treasure, since it's incorrectly named that on Deckbox. It imports without error this way, and the incorrectly named card in your Inventory should update to the new name without issue once Sebi updates the database.<br /><br /></li>
                             <li><a href='https://bit.ly/MTG-C20-Symbiotic-Swarm'>Symbiotic Swarm</a></li>
                             <li><a href='https://bit.ly/MTG-C20-Timeless-Wisdom'>Timeless Wisdom</a></li>
                         </ul>
@@ -1331,6 +1332,222 @@
                 <h2>Misc. Precons</h2>
                 <div class="list">
 
+                    <div class='list_wrap' id='jumpstart'>
+
+                        <h3 data-count='121'>Jumpstart</h3>
+                        <div class="list">
+
+                                <p class="includes">
+                                    20 card pack and front card <span class='warning'>(not all front cards are included on Deckbox yet)</span>
+                                </p>
+
+                                <p style='font-size: 0.8rem; padding: 0 0.5rem 1rem;'>
+                                    Many Jumpstart themes have more than one variant. In order to help you easily distinguish which specific CSV you'll need, a card that is unique to that variant (at least, within the context of that theme; the card may appear in other themes) has been listed. If two card names separated by a + are given, that means that, while no single card was unique to that variant, the specific combination of those two cards isn't found in any other variant of that theme.
+                                    <br /><br />
+                                    TL;DR &mdash; If the noted card(s) is in your pack, that CSV should match your pack list.
+                                    <br /><br />
+                                    <strong class='warning'>All CSVs are marked as unverified due to the basic lands, but all other cards in the CSVs should be accurate.</strong>
+                                </p>
+
+                                <h4>White</h4>
+                                <ul class="list">
+                                    <h5 class="category">Mythic Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Basri" class='unverified'>Basri</a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Unicorns" class='unverified'>Unicorns</a></li>
+
+                                    <h5 class="category">Rare Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Angels1" class='block unverified'>Angels 1<div class='note'>Baneslayer Angel</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Angels2" class='block unverified'>Angels 2<div class='note'>Linvala, Keeper of Silence</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Dogs1" class='block unverified'>Dogs 1<div class='note'>Selfless Savior</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Dogs2" class='block unverified'>Dogs 2<div class='note'>Isamaru, Hound of Konda</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Enchanted1" class='block unverified'>Enchanted 1<div class='note'>Kor Spiritdancer</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Enchanted2" class='block unverified'>Enchanted 2<div class='note'>Celestial Mantle</div></a></li>
+
+                                    <h5 class="category">Common Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Doctor1" class='block unverified'>Doctor 1<div class='note'>Take Heart</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Doctor2" class='block unverified'>Doctor 2<div class='note'>Secure the Scene</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Doctor3" class='block unverified'>Doctor 3<div class='note'>Rhox Faithmender</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Doctor4" class='block unverified'>Doctor 4<div class='note'>Cradle of Vitality</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Feathered1" class='block unverified'>Feathered Friends 1<div class='note'>Moment of Heroism</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Feathered2" class='block unverified'>Feathered Friends 2<div class='note'>Tandem Tactics</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Feathered3" class='block unverified'>Feathered Friends 3<div class='note'>Angel of the Dire Hour</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Feathered4" class='block unverified'>Feathered Friends 4<div class='note'>Archon of Justice</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Armored1" class='block unverified'>Heavily Armored 1<div class='note'>Feat of Resistance</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Armored2" class='block unverified'>Heavily Armored 2<div class='note'>Gird for Battle</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Armored3" class='block unverified'>Heavily Armored 3<div class='note'>Mikaeus, the Lunarch</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Armored4" class='block unverified'>Heavily Armored 4<div class='note'>Duelist's Heritage</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Legion1" class='block unverified'>Legion 1<div class='note'>Blessed Sanctuary</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Legion2" class='block unverified'>Legion 2<div class='note'>Inspiring Captain</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Legion3" class='block unverified'>Legion 3<div class='note'>Fortify + Glorious Anthem</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-W-Legion4" class='block unverified'>Legion 4<div class='note'>Lena, Selfless Champion</div></a></li>
+                                </ul>
+
+                                <h4>Blue</h4>
+                                <ul class="list">
+                                    <h5 class="category">Mythic Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Teferi" class='unverified'>Teferi</a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Milling" class='unverified'>Milling</a></li>
+
+                                    <h5 class="category">Rare Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Pirates1" class='block unverified'>Pirates 1<div class='note'>Coastal Piracy</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Pirates2" class='block unverified'>Pirates 2<div class='note'>Curious Obsession</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Spirits1" class='block unverified'>Spirits 1<div class='note'>Essence Flux</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Spirits2" class='block unverified'>Spirits 2<div class='note'>Rattlechains</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Sea1" class='block unverified'>Under the Sea 1<div class='note'>Tolarian Kraken</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Sea2" class='block unverified'>Under the Sea 2<div class='note'>Whelming Wave</div></a></li>
+
+                                    <h5 class="category">Common Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Clouds1" class='block unverified'>Above the Clouds 1<div class='note'>Inniaz, the Gale Force + Warden of Evos Isle</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Clouds2" class='block unverified'>Above the Clouds 2<div class='note'>Serendib Efreet</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Clouds3" class='block unverified'>Above the Clouds 3<div class='note'>Windreader Sphinx</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Clouds4" class='block unverified'>Above the Clouds 4<div class='note'>Kira, Great Glass-Spinner</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Archaeology1" class='block unverified'>Archaeology 1<div class='note'>Chromatic Sphere</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Archaeology2" class='block unverified'>Archaeology 2<div class='note'>Dreamstone Hedron</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Archaeology3" class='block unverified'>Archaeology 3<div class='note'>Vedalken Archmage</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Archaeology4" class='block unverified'>Archaeology 4<div class='note'>Scarecrone</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-U-WellRead1" class='block unverified'>Well-Read 1<div class='note'>Ormos, Archive Keeper + Narcolepsy</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-WellRead2" class='block unverified'>Well-Read 2<div class='note'>Arcane Encyclopedia</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-WellRead3" class='block unverified'>Well-Read 3<div class='note'>Rhystic Study</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-WellRead4" class='block unverified'>Well-Read 4<div class='note'>Mystic Archaeologist</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Wizards1" class='block unverified'>Wizards 1<div class='note'>Befuddle</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Wizards2" class='block unverified'>Wizards 2<div class='note'>Riptide Laboratory</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Wizards3" class='block unverified'>Wizards 3<div class='note'>Unsubstantiate</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-U-Wizards4" class='block unverified'>Wizards 4<div class='note'>Barrin, Tolarian Archmage</div></a></li>
+                                </ul>
+
+                                <h4>Black</h4>
+                                <ul class="list">
+                                    <h5 class="category">Mythic Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Liliana" class='unverified'>Liliana</a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Phyrexian" class='unverified'>Phyrexian</a></li>
+
+                                    <h5 class="category">Rare Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Discarding1" class='block unverified'>Discarding 1<div class='note'>Tinybones, Trinket Thief</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Discarding2" class='block unverified'>Discarding 2<div class='note'>Nyxathid</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Rogues1" class='block unverified'>Rogues 1<div class='note'>Gonti, Lord of Luxury</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Rogues2" class='block unverified'>Rogues 2<div class='note'>Corpse Traders</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Witchcraft1" class='block unverified'>Witchcraft 1<div class='note'>Witch's Cauldron</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Witchcraft2" class='block unverified'>Witchcraft 2<div class='note'>Blood Divination</div></a></li>
+
+                                    <h5 class="category">Common Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Minions1" class='block unverified'>Minions 1<div class='note'>Bone Picker</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Minions2" class='block unverified'>Minions 2<div class='note'>Eternal Taskmaster</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Minions3" class='block unverified'>Minions 3<div class='note'>Phyrexian Tower</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Minions4" class='block unverified'>Minions 4<div class='note'>Ghoulcaller Gisa</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Reanimated1" class='block unverified'>Reanimated 1<div class='note'>Archfiend's Vessel</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Reanimated2" class='block unverified'>Reanimated 2<div class='note'>Macabre Waltz</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Reanimated3" class='block unverified'>Reanimated 3<div class='note'>Scourge of Nel Toth</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Reanimated4" class='block unverified'>Reanimated 4<div class='note'>Rise of the Dark Realms</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Spooky1" class='block unverified'>Spooky 1<div class='note'>Liliana's Standard Bearer</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Spooky2" class='block unverified'>Spooky 2<div class='note'>Harvester of Souls</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Spooky3" class='block unverified'>Spooky 3<div class='note'>Ogre Slumlord</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Spooky4" class='block unverified'>Spooky 4<div class='note'>Black Market</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Vampires1" class='block unverified'>Vampires 1<div class='note'>Blood Artist</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Vampires2" class='block unverified'>Vampires 2<div class='note'>Blood Host</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Vampires3" class='block unverified'>Vampires 3<div class='note'>Exquisite Blood</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-B-Vampires4" class='block unverified'>Vampires 4<div class='note'>Drana, Liberator of Malakir</div></a></li>
+                                </ul>
+
+                                <h4>Red</h4>
+                                <ul class="list">
+                                    <h5 class="category">Mythic Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Chandra" class='unverified'>Chandra</a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Seismic" class='unverified'>Seismic</a></li>
+
+                                    <h5 class="category">Rare Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Dragons1" class='block unverified'>Dragons 1<div class='note'>Terror of the Peaks</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Dragons2" class='block unverified'>Dragons 2<div class='note'>Lathliss, Dragon Queen</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Lightning1" class='block unverified'>Lightning 1<div class='note'>Lightning Bolt</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Lightning2" class='block unverified'>Lightning 2<div class='note'>Ball Lightning</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Minotaurs1" class='block unverified'>Minotaurs 1<div class='note'>Herald's Horn</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Minotaurs2" class='block unverified'>Minotaurs 2<div class='note'>Rageblood Shaman</div></a></li>
+
+                                    <h5 class="category">Common Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Devilish1" class='block unverified'>Devilish 1<div class='note'>Forge Devil</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Devilish2" class='block unverified'>Devilish 2<div class='note'>Tibalt's Rager</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Devilish3" class='block unverified'>Devilish 3<div class='note'>Brash Taunter</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Devilish4" class='block unverified'>Devilish 4<div class='note'>Hellrider</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Goblins1" class='block unverified'>Goblins 1<div class='note'>Muxus, Goblin Grandee + Shock</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Goblins2" class='block unverified'>Goblins 2<div class='note'>Battle-Rattle Shaman</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Goblins3" class='block unverified'>Goblins 3<div class='note'>Goblin Chieftain</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Goblins4" class='block unverified'>Goblins 4<div class='note'>Krenko, Mob Boss</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Smashing1" class='block unverified'>Smashing 1<div class='note'>Flametongue Kavu</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Smashing2" class='block unverified'>Smashing 2<div class='note'>Flames of the Raze-Boar</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Smashing3" class='block unverified'>Smashing 3<div class='note'>Sarkhan's Unsealing</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Smashing4" class='block unverified'>Smashing 4<div class='note'>Etali, Primal Storm</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Spellcasting1" class='block unverified'>Spellcasting 1<div class='note'>Blindblast</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Spellcasting2" class='block unverified'>Spellcasting 2<div class='note'>Young Pyromancer</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Spellcasting3" class='block unverified'>Spellcasting 3<div class='note'>Dualcaster Mage</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-R-Spellcasting4" class='block unverified'>Spellcasting 4<div class='note'>Immolating Gyre</div></a></li>
+                                </ul>
+
+                                <h4>Green</h4>
+                                <ul class="list">
+                                    <h5 class="category">Mythic Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Garruk" class='unverified'>Garruk</a></li>
+                                    <li><a src="https://bit.ly/MTG-JMP-G-Walls" class='unverified'>Walls</a></li>
+
+                                    <h5 class="category">Rare Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Cats1" class='block unverified'>Cats 1<div class='note'>Pouncing Cheetah</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Cats2" class='block unverified'>Cats 2<div class='note'>Lurking Predators</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Elves1" class='block unverified'>Elves 1<div class='note'>Craterhoof Behemoth</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Elves2" class='block unverified'>Elves 2<div class='note'>Allosaurus Shepherd</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Lands1" class='block unverified'>Lands 1<div class='note'>Ulvenwald Hydra</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Lands2" class='block unverified'>Lands 2<div class='note'>Oracle of Mul Daya</div></a></li>
+
+                                    <h5 class="category">Common Packs</h5>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Dinosaurs1" class='block unverified'>Dinosaurs 1<div class='note'>Setessan Training</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Dinosaurs2" class='block unverified'>Dinosaurs 2<div class='note'>Titanic Growth</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Dinosaurs3" class='block unverified'>Dinosaurs 3<div class='note'>Selvala, Heart of the Wilds</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Dinosaurs4" class='block unverified'>Dinosaurs 4<div class='note'>Rampaging Brontodon</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Plus1" class='block unverified'>Plus One 1<div class='note'>Primeval Bounty</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Plus2" class='block unverified'>Plus One 2<div class='note'>Armorcraft Judge + Branching Evolution</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Plus3" class='block unverified'>Plus One 3<div class='note'>Rishkar, Peema Renegade</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Plus4" class='block unverified'>Plus One 4<div class='note'>Champion of Lambholt</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Predatory1" class='block unverified'>Predatory 1<div class='note'>Neyith of the Dire Hunt + Somberwald Stag</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Predatory2" class='block unverified'>Predatory 2<div class='note'>Affectionate Indrik + Gingerbrute</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Predatory3" class='block unverified'>Predatory 3<div class='note'>Thragtusk</div></a></li>
+                                    <li><a href="https://bit.ly/MTG-JMP-G-Predatory4" class='block unverified'>Predatory 4<div class='note'>Ravenous Baloth</div></a></li>
+                                    <br />
+                                    <li><a href="https://bit.ly/MTG-JMP-G-TreeHugging1" class='block unverified'>Tree-Hugging 1<div class='note'>Ambassador Oak + Primordial Sage</div></a></li>
+                                    <li><a src="https://bit.ly/MTG-JMP-G-TreeHugging2" class='block unverified'>Tree-Hugging 2<div class='note'>Aggressive Urge + Wildsize</div></a></li>
+                                    <li><a src="https://bit.ly/MTG-JMP-G-TreeHugging3" class='block unverified'>Tree-Hugging 3<div class='note'>Jolrael, Mwonvuli Recluse</div></a></li>
+                                    <li><a src="https://bit.ly/MTG-JMP-G-TreeHugging4" class='block unverified'>Tree-Hugging 4<div class='note'>Soul of the Harvest</div></a></li>
+                                </ul>
+
+                                <h4>Multicolored</h4>
+                                <ul class="list">
+                                    <li><a src="https://bit.ly/MTG-JMP-Rainbow" class='unverified'>Rainbow</a></li>
+                                </ul>
+
+                        </div>
+
+                    </div>
+
                     <div class='list_wrap' id='unsanctioned'>
 
                         <h3 data-count='1 box set'>Unsanctioned</h3>
@@ -1572,6 +1789,10 @@
                 </tr>
             </tbody>
             <tbody> <!-- OTHER -->
+                <tr>
+                    <td>OTHER</td>
+                    <td>Jumpstart</td>
+                </tr>
                 <tr>
                     <td>OTHER</td>
                     <td>Garfield</td>
@@ -3245,6 +3466,11 @@
     <h1>CHANGELOG</h1>
 
     <textarea id='changelog' style='width: 100%; height: 500px; padding: 1rem;' disabled>
+## [1.2.3] - 2020-07-17
+### Added
+- Jumpstart theme pack CSVs (none are verified, some front cards aren't included yet)
+
+
 ## [1.2.1] - 2020-05-30
 ### Added
 - Changelog created and populated from forum posts
