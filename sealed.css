@@ -511,6 +511,9 @@ tbody::after {
     transition: background-color 0.1s, color 0.1s, box-shadow 0.1s, outline-color 0.1s;
     transition: background-color 0.1s, color 0.1s, box-shadow 0.1s, outline-color 0.1s, -webkit-box-shadow 0.1s;
 }
+.list li a.block {
+    display: block;
+}
 .list li a:hover {
     background-color: rgba(0,0,200,0.2);
 }
@@ -556,7 +559,6 @@ tbody::after {
     font-weight: bold;
 }
 .note {
-    padding-left: 0.45rem;
     font-size: 0.7rem;
     font-style: italic;
 }
